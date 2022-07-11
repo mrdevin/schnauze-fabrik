@@ -1,0 +1,76 @@
+html, html * {
+    --primary-color: hsla(var(--primary-color-hue, 195), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 47%), var(--primary-color-alpha, 1));
+    --logo-secondary-fill: var(--primary-color);
+    --logo-primary-fill: white;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100%;
+    background-color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    /* fill: white; */
+}
+
+svg {
+    width: 200px;
+    height: 200px;
+}
+
+html nav {
+    --primary-color-hue: 190;
+    /* --primary-color-saturation: 100%; */
+    --primary-color-luminance: 20%;
+    /* --primary-color-alpha: .5; */
+
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+}
+
+nav a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+nav a:last-of-type {
+    margin-right: 20px;
+}
+main {
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    --primary-color-hue: 125;
+    --primary-color-saturation: 100%;
+    --primary-color-luminance: 34%;
+    --primary-color-alpha: 1;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem ;
+    align-items: center;
+    justify-content: center;
+}
+

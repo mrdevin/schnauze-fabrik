@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta description="Design your SPACE with 3D paper">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schnauze Fabrik</title>
+    <link rel="stylesheet" href="/src/css/app.css"/>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css"/>
+</head>
+<body>
+    <div class="parent">
+        <header>
+            <nav>
+                <a href="/">
+                    <svg viewBox="0 0 100 100">
+                        <use href="/src/img/logo3.svg#logo"></use>
+                    </svg>
+                    <!-- <img src="/src/img/logo.svg"/> -->
+                </a>
+                <a href="/videos">videos</a>
+                <a href="/impressum">impressum</a>
+                <a href="/shop">Shop</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Schnauze Fabrik</h1>
+
+            <observed-section name="one">
+                child content one
+            </observed-section>
+
+            <observed-section name="two">
+                child conten two2
+            </observed-section>
+
+            <observed-section name="three">
+                child content three
+            </observed-section>
+
+            <observed-section name="four">
+                child content four
+            </observed-section>
+        </main>
+        <footer>
+            2022©Schnauze Fabrik
+        </footer>
+    </div>
+    <script type="module" src="/src/components/observed-section.ts"></script>
+</body>
+</html>
