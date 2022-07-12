@@ -1,5 +1,5 @@
 html, html * {
-    --primary-color: hsla(var(--primary-color-hue, 195), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 47%), var(--primary-color-alpha, 1));
+    --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 10%), var(--primary-color-luminance, 47%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
     --logo-primary-fill: white;
 }
@@ -32,9 +32,9 @@ svg {
 }
 
 html nav {
-    --primary-color-hue: 190;
+    /* --primary-color-hue: 190; */
     /* --primary-color-saturation: 100%; */
-    --primary-color-luminance: 20%;
+    /* --primary-color-luminance: 20%; */
     /* --primary-color-alpha: .5; */
 
     background-color: var(--primary-color);
@@ -74,3 +74,9 @@ footer {
     justify-content: center;
 }
 
+a-scene {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

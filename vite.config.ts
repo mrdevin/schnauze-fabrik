@@ -1,11 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
-// import favicons from 'rollup-plugin-favicons'
-// import html2 from 'rollup-plugin-html2'
-
-// import { VitePWA } from 'vite-plugin-pwa'
-// import htmlPlugin from 'vite-plugin-html-config';
 
 const htmlPluginOpt = {
     favicon: './src/img/logo3.svg',
@@ -28,6 +23,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
+                impressum: resolve(__dirname, 'impressum/index.html'),
+                videos: resolve(__dirname, 'videos/index.html'),
             }
         },
         manifest: true
