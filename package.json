@@ -10,15 +10,16 @@
     "serve": "tsc && vite preview"
   },
   "dependencies": {
-    "lit": "^2.1.3",
+    "lit": "^2.2.8",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@types/node": "^18.0.3",
+    "@types/node": "^18.0.6",
     "a-frame": "^0.0.0",
     "postcss": "^8.4.14",
     "typescript": "^4.1.3",
-    "vite": "^2.8.1",
+    "vite": "^3.0.2",
+    "vite-plugin-favicons-inject": "^2.1.0",
     "vite-plugin-mpa": "^1.1.3"
   }
 }

@@ -1,23 +1,24 @@
 import { defineConfig } from "vite";
 import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
+import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 
-const htmlPluginOpt = {
-    favicon: './src/img/logo3.svg',
 
-    metas: [
-        {
-            name: 'keywords',
-            content: '3d paper wallart home decoration'
-        },
-        {
-            name: 'description',
-            content: 'Design your SPACE with 3D paper'
-        }
-    ],
-}
-// https://vitejs.dev/config/
+
 export default defineConfig({
+    plugins: [
+        vitePluginFaviconsInject('./src/img/logo.svg',
+         {
+            appName: 'Schnauze Fabrik',
+            appDescription: 'Design your SPACE with DIY 3D paper Skulpture',
+            developerName: 'MrDevin',
+            developerURL: null,
+            background: '#ddd',
+            theme_color: '#333'
+        }
+
+        )
+    ],
     build: {
         sourcemap: true,
         rollupOptions: {
