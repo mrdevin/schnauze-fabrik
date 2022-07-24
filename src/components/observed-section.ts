@@ -33,7 +33,7 @@ export class LitApp extends LitElement {
 
     }
 
-    handleIntersect(entries, observer) {
+    handleIntersect(entries) {
         entries.forEach((entry) => {
             if (entry.intersectionRatio > this.prevRatio) {
                 entry.target.style.backgroundColor = this.increasingCallback(entry.intersectionRatio);
@@ -59,7 +59,7 @@ export class LitApp extends LitElement {
     }
 
     buildThresholdList() {
-        let thresholds = [];
+        let thresholds: number[] = [];
         let numSteps = 20;
 
         for (let i = 1.0; i <= numSteps; i++) {

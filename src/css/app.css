@@ -41,10 +41,11 @@ svg {
     justify-content: space-between;
     padding: 1rem ;
 }
-
+header nav a {
+    width: 100%;
+}
 nav a {
     height: 100%;
-    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;

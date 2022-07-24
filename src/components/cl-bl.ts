@@ -32,6 +32,11 @@ export class clBl extends LitElement {
     @property({ type: String })
     color: string;
 
+    constructor(){
+        super();
+        this.color = '';
+    }
+
     willUpdate(changedProperties) {
         // console.log("🚀 ~ file: cl-bl.ts ~ line 23 ~ clBl ~ willUpdate ~ changedProperties", changedProperties, this.color)
         // only need to check changed properties for an expensive computation.
