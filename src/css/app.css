@@ -64,6 +64,10 @@ main {
     margin: 0 auto;
 }
 
+video {
+    display: inline-block;
+    height: 200px;
+}
 li {
     list-style-type: none;
 }
