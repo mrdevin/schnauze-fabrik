@@ -11,6 +11,7 @@ export class ObservedSection extends LitElement {
                 box-sizing: border-box;
                 position: sticky;
                 top: 181px;
+                padding-top: 1em;
                 background-color: var(--primary-color)
             }
 
