@@ -12,7 +12,6 @@ export class clBl extends LitElement {
                 font-size: var(--clbl-size);
                 -webkit-text-stroke: 3px white;
             }
-
         `
     ];
 

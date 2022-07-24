@@ -8,17 +8,16 @@ import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 export default defineConfig({
     plugins: [
         vitePluginFaviconsInject('./src/img/logo.svg',
-         {
-            appName: 'Schnauze Fabrik',
-            appDescription: 'Design your SPACE with DIY 3D paper Skulpture',
-            developerName: 'MrDevin',
-            developerURL: null,
-            lang: 'de',
-            display: "minimal-ui",
-            background: '#ddd',
-            theme_color: '#333'
-        }
-
+            {
+                appName: 'Schnauze Fabrik',
+                appDescription: 'Design your SPACE with DIY 3D paper Skulpture',
+                developerName: 'MrDevin',
+                developerURL: null,
+                lang: 'de',
+                display: "minimal-ui",
+                background: '#ffd400',
+                theme_color: '#333'
+            }
         )
     ],
     build: {

@@ -19,11 +19,11 @@ html {
 
 .parent {
     min-height: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
     padding: 0;
-    /* fill: white; */
 }
 
 svg {
@@ -31,10 +31,12 @@ svg {
     height: 100px;
 }
 
-html nav {
+ nav {
     background-color: var(--primary-color);
     width: 100%;
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 1rem ;
@@ -49,12 +51,16 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
 nav a:last-of-type {
     margin-right: 20px;
 }
+
 main {
     padding: 1em;
     max-width: 900px;
+    min-width: 100%;
+    width: clamp(100%, 100%, 900px);
     margin: 0 auto;
 }
 
