@@ -7,11 +7,11 @@ export class ObservedSection extends LitElement {
         css`
             :host {
                 display: block;
-                min-height: calc(100vh - 181px);
+                min-height: calc(100vh - 155px);
                 box-sizing: border-box;
                 position: sticky;
-                top: 181px;
-                padding-top: 1em;
+                top: 186px;
+                border-top: .5em double white ;
                 background-color: var(--primary-color)
             }
 

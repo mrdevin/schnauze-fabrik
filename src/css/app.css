@@ -61,10 +61,6 @@ nav a {
     text-decoration: none;
 }
 
-nav a:last-of-type {
-    margin-right: 20px;
-}
-
 main {
     padding: 1em;
     max-width: 760px;
