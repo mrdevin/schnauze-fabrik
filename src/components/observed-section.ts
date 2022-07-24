@@ -2,7 +2,7 @@ import {LitElement, html, css} from 'lit';
 import {customElement, property, state} from 'lit/decorators.js';
 
 @customElement('observed-section')
-export class LitApp extends LitElement {
+export class ObservedSection extends LitElement {
     static styles = [
         css`
             :host {
@@ -24,12 +24,12 @@ export class LitApp extends LitElement {
     }
 
     increasingCallback(ratio){
-        console.log("🚀 ~ file: observed-section.ts ~ line 21 ~ LitApp ~ increasingCallback ~ ratio", ratio)
+        console.log("🚀 ~ file: observed-section.ts ~ line 21 ~ ObservedSection ~ increasingCallback ~ ratio", ratio)
 
     }
 
     decreasingCallback(ratio){
-        console.log("🚀 ~ file: observed-section.ts ~ line 26 ~ LitApp ~ decreasingCallback ~ ratio", ratio)
+        console.log("🚀 ~ file: observed-section.ts ~ line 26 ~ ObservedSection ~ decreasingCallback ~ ratio", ratio)
 
     }
 
