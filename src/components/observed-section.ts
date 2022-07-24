@@ -7,8 +7,16 @@ export class ObservedSection extends LitElement {
         css`
             :host {
                 display: block;
-                min-height: 100vh;
+                min-height: calc(100vh - 181px);
                 box-sizing: border-box;
+                position: sticky;
+                top: 181px;
+                background-color: var(--primary-color)
+            }
+
+            :host([last]) {
+                min-height: calc(100vh - 294px);
+                top: 294px;
             }
         `
     ];
