@@ -1,5 +1,5 @@
 html, html * {
-    --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 10%), var(--primary-color-luminance, 47%), var(--primary-color-alpha, 1));
+    --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
     --logo-primary-fill: white;
 }
@@ -27,16 +27,11 @@ html {
 }
 
 svg {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 html nav {
-    /* --primary-color-hue: 190; */
-    /* --primary-color-saturation: 100%; */
-    /* --primary-color-luminance: 20%; */
-    /* --primary-color-alpha: .5; */
-
     background-color: var(--primary-color);
     width: 100%;
     display: flex;
@@ -59,11 +54,13 @@ nav a:last-of-type {
 }
 main {
     padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 footer {
     display: flex;
-    --primary-color-hue: 125;
+    --primary-color-hue: 50;
     --primary-color-saturation: 100%;
     --primary-color-luminance: 34%;
     --primary-color-alpha: 1;
@@ -72,11 +69,4 @@ footer {
     padding: 1rem ;
     align-items: center;
     justify-content: center;
-}
-
-a-scene {
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
 }
