@@ -12,7 +12,8 @@ export class ObservedSection extends LitElement {
                 position: sticky;
                 top: 186px;
                 border-top: .5em double white ;
-                background-color: var(--primary-color)
+                background-color: var(--primary-color);
+                overflow-y: scroll;
             }
 
             :host([last]) {
