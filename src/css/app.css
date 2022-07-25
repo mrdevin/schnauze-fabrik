@@ -68,8 +68,8 @@ main {
     width: 100%;
 }
 
-video {
-    display: flex;
+sf-model {
+    /* display: flex; */
     height: 200px;
     width: auto;
     margin: 0 auto;

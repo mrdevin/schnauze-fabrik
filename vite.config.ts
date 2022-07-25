@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
+import ViteRadar from 'vite-plugin-radar'
 
 
 
@@ -18,7 +19,13 @@ export default defineConfig({
                 background: '#ffd400',
                 theme_color: '#333'
             }
-        )
+        ),
+        ViteRadar({
+            // Google Analytics tag injection
+            analytics: {
+                id: 'G-WKRSREQMZ0',
+            },
+        })
     ],
     build: {
         sourcemap: true,
