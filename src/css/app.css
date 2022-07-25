@@ -26,12 +26,7 @@ html {
     padding: 0;
 }
 
-svg {
-    width: 150px;
-    height: 150px;
-}
-
- nav {
+ nav, sf-header {
     background-color: var(--primary-color);
     width: 100%;
     max-width: 100%;
@@ -41,11 +36,15 @@ svg {
     justify-content: space-between;
     padding: 1rem ;
 }
-header nav a {
+
+sf-header::part(link) {
     width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-header {
+sf-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -64,7 +63,7 @@ nav a {
 main {
     padding: 1em;
     max-width: 760px;
-    margin: 181px auto 0;
+    margin: 281px auto 0;
     width: 100%;
 }
 

@@ -9,11 +9,8 @@ export class ObservedSection extends LitElement {
                 display: block;
                 min-height: calc(100vh - 155px);
                 box-sizing: border-box;
-                position: sticky;
-                top: 186px;
                 border-top: .5em double white ;
                 background-color: var(--primary-color);
-                overflow-y: scroll;
             }
 
             :host([last]) {
@@ -32,14 +29,14 @@ export class ObservedSection extends LitElement {
         super.connectedCallback();
         this.createObserver(this);
     }
-
+    // @ts-ignore
     increasingCallback(ratio){
-        console.log("🚀 ~ file: observed-section.ts ~ line 21 ~ ObservedSection ~ increasingCallback ~ ratio", ratio)
+        // console.log("🚀 ~ file: observed-section.ts ~ line 21 ~ ObservedSection ~ increasingCallback ~ ratio", ratio)
 
     }
-
+    // @ts-ignore
     decreasingCallback(ratio){
-        console.log("🚀 ~ file: observed-section.ts ~ line 26 ~ ObservedSection ~ decreasingCallback ~ ratio", ratio)
+        // console.log("🚀 ~ file: observed-section.ts ~ line 26 ~ ObservedSection ~ decreasingCallback ~ ratio", ratio)
 
     }
 

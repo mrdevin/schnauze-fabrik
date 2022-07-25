@@ -17,7 +17,7 @@ export default defineConfig({
                 lang: 'de',
                 display: "minimal-ui",
                 background: '#ffd400',
-                theme_color: '#333'
+                theme_color: '#fff'
             }
         ),
         ViteRadar({
@@ -34,6 +34,9 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 impressum: resolve(__dirname, 'impressum/index.html'),
                 videos: resolve(__dirname, 'videos/index.html'),
+            },
+            manualChunks: {
+                SfModel: ['src/components/sf-model.ts']
             }
         },
         manifest: true
