@@ -17,16 +17,26 @@ export class SfModel extends LitElement {
             svg {
                 width: var(--sf-logo-size);
                 height: var(--sf-logo-size);
+            }
 
+            :host([animate-svg]) svg{
+                transition: all .4s linear;
             }
         `
     ];
 
     constructor(){
         super();
+        console.log('this.animateSvg',this.animateSvg)
         requestAnimationFrame(()=>{
+            //for the case when the browser loads and the scroll is prerendered in the middle of the page.
             if (window.scrollY > 200){
                 this.setNewHeaderDimensions(80);
+                this.shadowRoot.addEventListener('transitionend', ()=>{
+                    this.animateSvg = false;
+                });
+            }else{
+                this.animateSvg = false;
             }
         });
 
@@ -37,6 +47,9 @@ export class SfModel extends LitElement {
 
     @state()
     oldScroll: Number = 0;
+
+    @property({ type: Boolean, attribute: 'animate-svg', reflect: true })
+    animateSvg: boolean = true;
 
     @property({type: Number})
     minHeaderHeight: number = 80;
