@@ -70,7 +70,7 @@
                 </div>
             </observed-section>
             <observed-section>
-                <h3>Plan ihrem Design.</h3>
+                <h3>Plan ihren Design.</h3>
                 <h4>Erstellen Sie ein Design und ihr Design neu umstellen. Sie können alles ändern, so oft wie Sie willen.</h4>
                 <p>Welche Form passt zu ihrer Lust, zu ihrem Leben und zu ihrer Wand? Spiel mit aller die verschiedene Möglichkeiten und wähle ihre Favoriten aus.</p>
                 <figure>
@@ -82,11 +82,14 @@
             <observed-section last>
                 <h3>Einfache Montage, Teile herausnehmen, falten, kleben und auf die Wand hängen.</h3>
                 <h4>Video Anleitung und Schablone zum Aufhängen.</h4>
-                <figure>
-                    <figcaption>
-                        Stop motion Animation of assembly and hanging.
-                    </figcaption>
-                </figure>
+                <video id="assVid" controls loop autoplay muted >
+                    <source src="/src/vids/flach-tile-assembly.webm" type="video/webm">
+
+                    <source src="/src/vids/flach-tile-assembly.mp4" type="video/mp4">
+                </video>
+                <script>
+                    document.querySelector('#assVid').playbackRate = 0.5;
+                </script>
                 <a>link to example grids</a>
                 <a>grid app</a>
                 <a>Schablone zum Aufhängen</a>

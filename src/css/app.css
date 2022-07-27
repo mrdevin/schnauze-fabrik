@@ -73,6 +73,11 @@ nav a {
 
 }
 
+video {
+    aspect-ratio: 16 / 9 ;
+    width: 100%;
+}
+
 .split-color {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
