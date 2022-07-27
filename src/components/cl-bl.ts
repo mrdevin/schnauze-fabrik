@@ -6,8 +6,9 @@ export class clBl extends LitElement {
     static styles = [
         css`
             :host {
-                display: inline-flex;
-                --clbl-size: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                --clbl-size: 150px;
                 --clbl-color: currentColor;
                 align-items: center;
                 justify-content: center;
@@ -22,9 +23,14 @@ export class clBl extends LitElement {
                 margin-right: .18em;
             }
 
-            span{
-                font-size: 1em;
-                color: currentColor
+            :host span{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                font-size: .8em;
+                color: currentColor;
+                white-space: nowrap;
             }
         `
     ];
@@ -48,7 +54,9 @@ export class clBl extends LitElement {
     render() {
         return html`
             	<i>⬢</i>
-               <span><slot></slot></span>
+               <span>
+                    <slot></slot>
+                </span>
         `;
     }
 }

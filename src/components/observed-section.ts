@@ -7,20 +7,15 @@ export class ObservedSection extends LitElement {
         css`
             :host {
                 display: block;
-                min-height: calc(100vh - 155px);
                 box-sizing: border-box;
-                border-top: .5em double white ;
                 background-color: var(--primary-color);
-            }
-
-            :host([last]) {
-                min-height: calc(100vh - 294px);
-                top: 294px;
             }
         `
     ];
 
     @property() name = 'observed-section';
+    @property({type: String})
+    title: string = '';
 
     @state()
     prevRatio = 0.0;
@@ -78,8 +73,16 @@ export class ObservedSection extends LitElement {
         return thresholds;
     }
 
+    getTitleDom() {
+        if (!!this.title) {
+            return html`<h3>${this.title}</h3>`;
+        } else {
+            return html``;
+        }
+    }
     render() {
         return html`
+            ${this.getTitleDom()}
             <slot></slot>
         `;
     }
