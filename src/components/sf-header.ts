@@ -24,7 +24,6 @@ export class SfModel extends LitElement {
 
     constructor(){
         super();
-        // this.oldScroll = window.scrollY;
         requestAnimationFrame(()=>{
             if (window.scrollY > 200){
                 this.setNewHeaderDimensions(80);
