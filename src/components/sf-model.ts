@@ -10,6 +10,7 @@ export class SfModel extends ModelViewerElement{
         css`
             :host {
                 --poster-color: transparent;
+                transform: translateY(-1em);
             }
 
         `

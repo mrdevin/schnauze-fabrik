@@ -20,14 +20,10 @@ export class clBl extends LitElement {
                 color: var(--clbl-color);;
                 font-size: var(--clbl-size);
                 -webkit-text-stroke: 3px white;
-                margin-right: .18em;
             }
 
             :host span{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
+                text-align: center;
                 font-size: .8em;
                 color: currentColor;
                 white-space: nowrap;
