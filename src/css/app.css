@@ -80,13 +80,13 @@ video {
 
 .split-color {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
 }
 /*mobile*/
 @media (max-width: 480px) {
    .split-color {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
 }
 
@@ -94,7 +94,7 @@ video {
 @media (min-width: 480px) and (max-width: 768px) {
    .split-color {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 }
 

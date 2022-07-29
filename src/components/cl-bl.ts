@@ -8,10 +8,13 @@ export class clBl extends LitElement {
             :host {
                 display: flex;
                 flex-wrap: wrap;
-                --clbl-size: 150px;
+                --clbl-size: 250px;
                 --clbl-color: currentColor;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+                box-sizing: border-box;
+
             }
 
             i{
@@ -19,14 +22,22 @@ export class clBl extends LitElement {
                 font-style: normal;
                 color: var(--clbl-color);;
                 font-size: var(--clbl-size);
-                -webkit-text-stroke: 3px white;
+                -webkit-text-stroke: 10px white;
+                box-sizing: border-box;
+
             }
 
             :host span{
+                display: block;
+                position: absolute;
+                bottom: 5.9rem;
+                background-color: white;
+                width: calc(var(--clbl-size) - 7em);
                 text-align: center;
-                font-size: .8em;
-                color: currentColor;
-                white-space: nowrap;
+                font-size: 0.9em;
+                color: currentcolor;
+                padding: 3px 5px;
+                box-sizing: border-box;
             }
         `
     ];
