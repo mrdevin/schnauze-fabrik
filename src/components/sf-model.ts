@@ -15,7 +15,4 @@ export class SfModel extends ModelViewerElement{
 
         `
     ];
-    render() {
-        super.render()
-    }
 }

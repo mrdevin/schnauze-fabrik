@@ -2,12 +2,21 @@ import { defineConfig } from "vite";
 import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
-import ViteRadar from 'vite-plugin-radar'
-
+import ViteRadar from 'vite-plugin-radar';
+import htmlMinifier from 'rollup-plugin-html-minifier'
+import imagemin from "rollup-plugin-imagemin";
+import brotli from "rollup-plugin-brotli";
+import buildStatistics from 'rollup-plugin-build-statistics';
 
 
 export default defineConfig({
     plugins: [
+        buildStatistics({
+            projectName: 'schnauze-fabrik',
+        }),
+        brotli(),
+        htmlMinifier(),
+        imagemin(),
         vitePluginFaviconsInject('./src/img/logo.svg',
             {
                 appName: 'Schnauze Fabrik',
