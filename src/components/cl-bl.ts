@@ -22,6 +22,7 @@ export class clBl extends LitElement {
                 font-style: normal;
                 color: var(--clbl-color);;
                 font-size: var(--clbl-size);
+                line-height: calc(var(--clbl-size) - .2em);
                 -webkit-text-stroke: 10px white;
                 box-sizing: border-box;
 
@@ -30,7 +31,7 @@ export class clBl extends LitElement {
             :host span{
                 display: block;
                 position: absolute;
-                bottom: 5.9rem;
+                bottom: 3.2rem;
                 background-color: white;
                 width: calc(var(--clbl-size) - 7em);
                 text-align: center;
