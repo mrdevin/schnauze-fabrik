@@ -24,7 +24,18 @@
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="/src/css/app.css"/>
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css"/>
-
+    <script type="module">
+        import animationPointed from '/src/models/base-hex-title-pointed-animation.glb?url'
+        import animationFlat from '/src/models/base-hex-title-animation.glb?url'
+        import pinkPoster from '/src/img/pink-poster.jpg?url'
+        import bluePoster from '/src/img/blue-poster.jpg?url'
+        const animationPointedEl = document.getElementById('animationPointedEl');
+        const animationFlatEl = document.getElementById('animationFlatEl');
+        animationPointedEl.setAttribute('src', animationPointed);
+        animationPointedEl.setAttribute('poster', pinkPoster);
+        animationFlatEl.setAttribute('src', animationFlat);
+        animationFlatEl.setAttribute('poster', bluePoster);
+    </script>
 </head>
 <body>
     <div class="parent">
@@ -46,10 +57,9 @@
                         <h5><i>Spitzig Fliesen</i> bringt mehr Dimension auf ihre Wand.</h5>
 
                         <sf-model
+                            id="animationPointedEl"
                             autoplay
                             loading="eager"
-                            poster="/pink-poster.jpg"
-                            src="/src/models/base-hex-title-pointed-animation.glb"
                         >
                             <span hidden slot="progress-bar"></span>
                         </sf-model>
@@ -57,10 +67,9 @@
                     <div class="split-item">
                         <h5><i>Flach Fliesen</i> sind die perfekte Basis für ihre DIY Projekte.</h5>
                         <sf-model
+                            id="animationFlatEl"
                             autoplay
                             loading="eager"
-                            poster="/blue-poster.jpg"
-                            src="/src/models/base-hex-title-animation.glb"
                         >
                             <span hidden slot="progress-bar"></span>
                         </sf-model>

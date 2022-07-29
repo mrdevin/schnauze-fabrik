@@ -3,10 +3,12 @@ import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 import ViteRadar from 'vite-plugin-radar';
-import htmlMinifier from 'rollup-plugin-html-minifier'
+import htmlMinimize from '@sergeymakinen/vite-plugin-html-minimize';
+import minifyHTMLLiterals from 'rollup-plugin-minify-html-literals';
 import imagemin from "rollup-plugin-imagemin";
 import brotli from "rollup-plugin-brotli";
 import buildStatistics from 'rollup-plugin-build-statistics';
+import { visualizer } from "rollup-plugin-visualizer";
 
 
 export default defineConfig({
@@ -15,7 +17,16 @@ export default defineConfig({
             projectName: 'schnauze-fabrik',
         }),
         brotli(),
-        htmlMinifier(),
+        visualizer(),
+        htmlMinimize({
+            filter: /\.x?html?$/,
+            minifierOptions: {
+                collapseWhitespace: true,
+                minifyJS: true,
+                removeComments: true
+            }
+        }),
+        minifyHTMLLiterals(),
         imagemin(),
         vitePluginFaviconsInject('./src/img/logo.svg',
             {
@@ -45,7 +56,7 @@ export default defineConfig({
                 videos: resolve(__dirname, 'videos/index.html'),
             },
             manualChunks: {
-                SfModel: ['src/components/sf-model.ts']
+                SfModel: ['src/components/sf-model.ts'],
             }
         },
         manifest: true

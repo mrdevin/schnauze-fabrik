@@ -3,3 +3,4 @@ dist
 types
 *-error.log
 stats/
+stats.*
