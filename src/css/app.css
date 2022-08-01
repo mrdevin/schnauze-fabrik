@@ -6,8 +6,8 @@ html, html * {
 
 body,
 html {
-    width: 100vw;
-    height: 100%;
+    /* width: 100vw; */
+    /* height: 100%; */
     background-color: var(--primary-color);
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
@@ -19,7 +19,7 @@ html {
 
 .parent {
     min-height: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
@@ -74,7 +74,8 @@ nav a {
 }
 
 .split-2 picture img{
-    height: 300px;
+    /* height: 300px; */
+    max-width: 95%;
 }
 
 .split-2 picture {
