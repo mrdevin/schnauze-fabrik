@@ -73,6 +73,16 @@ nav a {
 
 }
 
+.split-2 picture img{
+    height: 300px;
+}
+
+.split-2 picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 video {
     aspect-ratio: 16 / 9 ;
     width: 100%;
