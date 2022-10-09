@@ -24,9 +24,9 @@ export class AnleitungAufhaengen extends LitElement {
       <h1>Aufhängen</h1>
 
       <p>Your Tiles should have come with a hanging template but if you need another one we have provided them for download as PDFs.</p>
-      <a target="_blank"  rel="noopener noreferrer" href="/public/deeper-base-hex-title-hanging.pdf">Flat Tile Hanging Template</a>
+      <a target="_blank" rel="noopener noreferrer" href="/public/flat-hex-title-hanging.pdf">Flat Tile Hanging Template</a>
       <br/>
-      <a target="_blank"  rel="noopener noreferrer" href="/public/deeper-base-pointed-hex-title-hanging.pdf">Pointed Tile Hanging Template</a>
+      <a target="_blank" rel="noopener noreferrer" href="/public/pointed-hex-title-hanging.pdf">Pointed Tile Hanging Template</a>
 
       <h2>Placing on the wall</h2>
       <p>We recommend using nails to affix your Tiles to the wall. It is by far the easiest method and causes the least amount of damage to the wall. You can also use double-sided tape but it is more likely to damage the wall and your tiles when you remove them from the wall.

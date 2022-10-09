@@ -26,7 +26,7 @@ export class AnleitungDesignIdeen extends LitElement {
       </picture>
       <p>Here are a few examples of some patterns that you can create
       Many more patterns can be found in the Pattern Maker App.</p>
-      <a target="_Blank" href="https://schnauze-fabrik.app">Use the Pattern Maker</a>
+      <a target="_Blank" rel="no" href="https://schnauze-fabrik.app">Use the Pattern Maker</a>
 
       <h2>Words</h2>
       <p>Words, Letters, Numbers, and Symbols can add symbolic meaning to your designs. These are easiest to do on Flat Tiles.</p>
@@ -36,7 +36,7 @@ export class AnleitungDesignIdeen extends LitElement {
 
       <h2>Photos</h2>
       <p>You can use the Flat Tiles as a photo frame. We have prepared a Cropping Template for you to use. You will need to print it out on <i>heavy-weight</i> paper and cut it out. You can then use it to draw a thin line on your printed photo and cut the photo to size. Once the photo is cropped you can also use the template to align the photo on your Tile and affix it with a bit of glue or double-sided tape.</p>
-      <a>Photo Cropping Template</a>
+      <a target="_blank" rel="noopener noreferrer" href="/public/photo-cropping-template.pdf">Photo Cropping Template</a>
 
       <h2>Collage</h2>
       <p>For a more free-form look, you can print out images or cut up magazines to collage on top of the assembled tile. Feel free to collage on the main surface as well as around the edges and on the sides of the tile.</p>
