@@ -9,8 +9,8 @@ import StackOneJpeg from '/src/img/home/stack-1.jpg';
 import StackOneWebp from '/src/img/home/stack-1.webp';
 import WallOneJpeg from '/src/img/home/wall-1.jpg';
 import WallOneWebp from '/src/img/home/wall-1.webp';
-import WallTwoJpeg from '/src/img/home/wall-2.jpg';
-import WallTwoWebp from '/src/img/home/wall-2.webp';
+import FlowerJpeg from '@/img/design-ideen/flower.jpeg';
+import FlowerWebp from '@/img/design-ideen/flower.webp';
 import WallCloseOneJpeg from '/src/img/home/wall-close-1.jpg';
 import WallCloseOneWebp from '/src/img/home/wall-close-1.webp';
 import FlatAssemblyMp4 from '/src/vids/flach-tile-assembly.mp4';
@@ -84,14 +84,13 @@ export class PageHome extends LitElement {
             <img loading="lazy" src="${WallCloseOneJpeg}">
           </picture>
           <picture class="split-item">
-            <source type="image/webp" srcset="${WallTwoWebp}">
-            <img loading="lazy" src="${WallTwoJpeg}">
+            <source type="image/webp" srcset="${FlowerWebp}">
+            <img loading="lazy" src="${FlowerJpeg}">
           </picture>
         </div>
       </observed-section>
       <observed-section last>
         <h3>Einfache Montage, Teile herausnehmen, falten, kleben und auf die Wand hängen.</h3>
-        <h4>Video Anleitung und Schablone zum Aufhängen.</h4>
         <video id="assVid" controls loop autoplay muted>
           <source src="${FlatAssemblyWebm}" type="video/webm">
 
