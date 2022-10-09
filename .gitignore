@@ -4,3 +4,6 @@ types
 *-error.log
 stats/
 stats.*
+*.mp4
+*.webm
+dev-dist
