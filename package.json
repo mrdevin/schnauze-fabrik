@@ -27,7 +27,7 @@
   "devDependencies": {
     "@google/model-viewer": "^2.0.2",
     "@sergeymakinen/vite-plugin-html-minimize": "^1.0.4",
-    "@types/node": "^18.8.2",
+    "@types/node": "^18.8.3",
     "@vaadin/router": "^1.7.4",
     "lit-analyzer": "^1.2.1",
     "postcss": "^8.4.17",
