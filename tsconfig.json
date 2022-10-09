@@ -19,12 +19,23 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "plugins": [
+      {
+        "name": "typescript-lit-html-plugin"
+      },
+      {
+        "name": "ts-lit-plugin"
+      }
+    ],
+    "types": [
+          "vite-plugin-pwa/client"
+      ]
   },
   "paths": {
-      "@/*": ["./*"],
+      "@/*": ["/src/*"],
       "*.svg?component": ["*.svg"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./src/declaration.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -9,10 +9,25 @@ import imagemin from "rollup-plugin-imagemin";
 import brotli from "rollup-plugin-brotli";
 import buildStatistics from 'rollup-plugin-build-statistics';
 import { visualizer } from "rollup-plugin-visualizer";
+import { VitePWA } from 'vite-plugin-pwa';
 
 
 export default defineConfig({
     plugins: [
+        VitePWA({
+            registerType: "autoUpdate",
+            injectRegister: 'auto',
+            manifest: 'auto',
+            workbox: {
+                globDirectory: 'dist',
+                globPatterns: [
+                    '**/*.{html,js,css,png,webp,jpg,mp4,webm,glb}'
+                ],
+            },
+            devOptions: {
+                enabled: true
+            }
+        }),
         buildStatistics({
             projectName: 'schnauze-fabrik',
         }),
@@ -45,16 +60,14 @@ export default defineConfig({
             analytics: {
                 id: 'G-WKRSREQMZ0',
             },
-        })
+        }),
+
     ],
     build: {
+        assetsDir: "code",
         sourcemap: true,
+        cssCodeSplit: true,
         rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                impressum: resolve(__dirname, 'impressum/index.html'),
-                videos: resolve(__dirname, 'videos/index.html'),
-            },
             manualChunks: {
                 SfModel: ['src/components/sf-model.ts'],
             }
