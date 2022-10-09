@@ -136,8 +136,8 @@ export class AppIndex extends LitElement {
             </main>
             <footer>
                 <nav>
-                    <a href="/about/">Über Uns</a>
-                    <a href="/anleitung/">Anleitung</a>
+                    <a href="/anleitung/design-ideen">Design Ideen</a>
+                    <a href="/anleitung/">Montageanleitung</a>
                     <a href="/impressum/">Impressum</a>
                     <a target="_blank" rel="noopener" href="http://schnauze-fabrik.shop">Shop</a>
                     <span>${new Date().getFullYear() } <span class="copyrightSymbol">©</span> Schnauze Fabrik</span>

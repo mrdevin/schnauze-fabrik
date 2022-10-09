@@ -26,7 +26,7 @@ export class AnleitungDesignIdeen extends LitElement {
       </picture>
       <p>Here are a few examples of some patterns that you can create
       Many more patterns can be found in the Pattern Maker App.</p>
-      <a target="_Blank" rel="no" href="https://schnauze-fabrik.app">Use the Pattern Maker</a>
+      <a ttarget="_blank" rel="noopener noreferrer"  href="https://schnauze-fabrik.app">Use the Pattern Maker App</a>
 
       <h2>Words</h2>
       <p>Words, Letters, Numbers, and Symbols can add symbolic meaning to your designs. These are easiest to do on Flat Tiles.</p>
