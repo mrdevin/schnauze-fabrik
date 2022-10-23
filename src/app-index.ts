@@ -117,8 +117,7 @@ export class AppIndex extends LitElement {
                       action: async () => {
                         await import('./pages/page-about.js');
                       },
-
-                    },
+                  },
                 ],
             } as any,
         ]);

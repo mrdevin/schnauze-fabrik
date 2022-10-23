@@ -23,6 +23,9 @@ export default defineConfig({
                 globPatterns: [
                     '**/*.{html,js,css,png,webp,jpg,mp4,webm,glb}'
                 ],
+                navigateFallbackDenylist: [/^\/*.pdf/],
+                skipWaiting: true,
+
             },
             devOptions: {
                 enabled: true

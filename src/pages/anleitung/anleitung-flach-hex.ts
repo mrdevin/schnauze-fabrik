@@ -5,13 +5,21 @@ import FlachVidMp4 from '@/vids/flat-hexagon-instructions.mp4';
 import FlachVidWebm from '@/vids/flat-hexagon-instructions.webm';
 import EnSubs from '@/vids/flat-hexagon-instructions-en.vtt?url';
 import DeSubs from '@/vids/flat-hexagon-instructions-de.vtt?url';
+import ScorelinesJpg from '@/img/anleitung-flach-hex/scorelines.jpeg';
+import FoldJpeg from '@/img/anleitung-flach-hex/fold2.jpeg';
+import SmallFlapJpg from '@/img/anleitung-flach-hex/small-flap.jpeg';
+import Outline0Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-0.svg';
+import Outline1Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-1.svg';
+import Outline2Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-2.svg';
+
 
 import { AnleitungStyles } from '/src/css/anleitung-styles.js';
 @customElement('anleitung-flach-hex')
 export class AnleitungFlachHex extends LitElement {
     static styles = [
       AnleitungStyles,
-      css``
+      css`
+      `
     ]
 
     createRenderRoot() { return this; }
@@ -45,6 +53,9 @@ export class AnleitungFlachHex extends LitElement {
               <span class="num">1</span>
               The Tile is attached to the sheet of paper by several small 1mm Holding Tabs. Carefully remove the Tile from the larger sheet by pinching on both sides of a Holding Gap and slowly moving them apart.
             </p>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${Outline0Svg}">
+            </picture>
           </div>
           <div class="instStep">
             <p>
@@ -65,6 +76,13 @@ export class AnleitungFlachHex extends LitElement {
               <span class="num">3</span>
               Take note of the pre-scored lines on the Tile. Place the Tile flat on a table and fold along each score line, pressing the fold with your finger. After making a fold, unfold it before moving on to the next fold.
             </p>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${Outline0Svg}">
+            </picture>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${ScorelinesJpg}">
+            </picture>
+
           </div>
           <div class="instStep">
 
@@ -72,12 +90,21 @@ export class AnleitungFlachHex extends LitElement {
               <span class="num">4</span>
               Once you have creased all of the folds you are ready to start gluing. We recommend using PVA, also known as School Glue, as it will dry quickly. You will only need a small amount of glue. Starting with the small tabs glue together all 6 corners. Pay attention that all of the score lines line up in the corners. Press and hold the tabs for 3 to 5 seconds, to allow the glue to partially set. Use a tissue, wipe away any excess glue.
             </p>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${Outline1Svg}">
+            </picture>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${SmallFlapJpg}">
+            </picture>
           </div>
           <div class="instStep">
             <p>
               <span class="num">5</span>
               Now you have to attach the Back Panel to the rest of the Tile. Apply a small amount of glue to all of the remaining tabs. Starting where the Back Panel is attached to the rest of the tile, Fold the Back Panel down. Try your best to align the sides and corners to the main body of the tile, working your way around to the other side of the tile. Using a tissue, wipe away any excess glue.
             </p>
+            <picture class="instImg">
+              <img height="253" width="400" loading="lazy" src="${Outline2Svg}">
+            </picture>
           </div>
           <h3>Next Steps</h3>
           <p>

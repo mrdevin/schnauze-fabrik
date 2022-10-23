@@ -2,6 +2,8 @@ declare module '*.css';
 declare module '*.js';
 declare module '*.jpg';
 declare module '*.jpg?url';
+declare module '*.svg';
+declare module '*.svg?url';
 declare module '*.jpeg';
 declare module '*.jpeg?url';
 declare module '*.webp';
