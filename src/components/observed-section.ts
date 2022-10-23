@@ -5,13 +5,16 @@ import {customElement, property, state} from 'lit/decorators.js';
 export class ObservedSection extends LitElement {
   static styles = [
     css`
-      :host {
+      observed-section {
         display: block;
         box-sizing: border-box;
         background-color: var(--primary-color);
       }
     `
   ];
+
+  createRenderRoot() { return this; }
+
 
   @property() name = 'observed-section';
   @property({type: String})

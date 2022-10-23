@@ -62,14 +62,12 @@ export class AnleitungFlachHex extends LitElement {
               Inside the Back Panel, you should see a start shape that is also held in place by several Holding Tabs. Carefully remove the star shape.
             </p>
           </div>
-          <div class="instStep">
-            <p>
-              <span class="note">Note:</span>
-              If you wish to add designs, stickers, photos, or anything else to your Tile Now is the time to do it. We have compiled a list of ideas about how you can modify your Tile.
-              <br>
-              <a href="design-ideen">Design Ideen</a>
-            </p>
-          </div>
+          <p>
+            <span class="note">Note:</span>
+            If you wish to add designs, stickers, photos, or anything else to your Tile Now is the time to do it. We have compiled a list of ideas about how you can modify your Tile.
+            <br>
+            <a href="design-ideen">Design Ideen</a>
+          </p>
           <div class="instStep">
             <p>
               <span class="num">3</span>
@@ -84,7 +82,6 @@ export class AnleitungFlachHex extends LitElement {
 
           </div>
           <div class="instStep">
-
             <p>
               <span class="num">4</span>
               Once you have creased all of the folds you are ready to start gluing. We recommend using PVA, also known as School Glue, as it will dry quickly. You will only need a small amount of glue. Starting with the small tabs glue together all 6 corners. Pay attention that all of the score lines line up in the corners. Press and hold the tabs for 3 to 5 seconds, to allow the glue to partially set. Use a tissue, wipe away any excess glue.

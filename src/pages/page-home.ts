@@ -75,8 +75,7 @@ export class PageHome extends LitElement {
         </div>
       </observed-section>
       <observed-section>
-        <h3>Plan ihren Design.</h3>
-        <h4>Erstellen Sie ein Design und ihr Design neu umstellen. Sie können alles ändern, so oft wie Sie willen.</h4>
+        <h3>Plan ihren Design. Erstellen Sie ein Design und ihr Design neu umstellen. Sie können alles ändern, so oft wie Sie willen.</h3>
         <p>Welche Form passt zu ihrer Lust, zu ihrem Leben und zu ihrer Wand? Spiel mit aller die verschiedene Möglichkeiten und wähle ihre Favoriten aus.</p>
         <div class="split-2">
           <picture class="split-item">
@@ -96,10 +95,6 @@ export class PageHome extends LitElement {
 
           <source src="${FlatAssemblyMp4}" type="video/mp4">
         </video>
-        <a href="/anleitung">Assembly Instructions</a>
-        <a href="/anleitung/design-ideen">link to example grids</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://schnauze-fabrik.app/">grid app</a>
-        <a href="/anleitung/aufhaengen">Schablone zum Aufhängen</a>
       </observed-section>
   `;
   }

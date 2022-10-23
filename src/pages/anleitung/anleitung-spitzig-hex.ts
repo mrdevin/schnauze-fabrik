@@ -62,14 +62,12 @@ export class AnleitungSpitzigHex extends LitElement {
               Inside the Back Panel, you should see a start shape that is also held in place by several Holding Tabs. Carefully remove the star shape.
             </p>
           </div>
-          <div class="instStep">
-            <p>
-              <span class="note">Note:</span>
-              If you wish to add designs, stickers, photos, or anything else to your Tile Now is the time to do it. We have compiled a list of ideas about how you can modify your Tile.
-              <br>
-              <a href="design-ideen">Design Ideen</a>
-            </p>
-          </div>
+          <p>
+            <span class="note">Note:</span>
+            If you wish to add designs, stickers, photos, or anything else to your Tile Now is the time to do it. We have compiled a list of ideas about how you can modify your Tile.
+            <br>
+            <a href="design-ideen">Design Ideen</a>
+          </p>
           <div class="instStep">
             <p>
               <span class="num">3</span>

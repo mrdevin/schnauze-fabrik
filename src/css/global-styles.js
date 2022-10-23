@@ -10,7 +10,7 @@ export const GlobalStyles = css`
     --link-color: var(--shadow-color);
 }
 
-h1, h2, h3, h4, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'GT-Super-Display-Super', Rockwell, serif;
 }
 
@@ -59,6 +59,10 @@ sf-header {
     background-color: var(--primary-color);
 }
 
+a {
+    color: var(--shadow-color);
+}
+
 nav a {
     height: 100%;
     display: flex;
@@ -67,7 +71,7 @@ nav a {
     text-decoration: none;
 }
 
- a {
+ main a {
     color: var(--link-color);
     font-weight: bolder;
     font-size: 1em;
@@ -86,12 +90,14 @@ nav a {
     vertical-align: middle;
 }
 
- a:hover,
- a:focus{
+
+
+ main a:hover,
+ main a:focus{
     box-shadow: 5px 5px 0px var(--link-color);
 }
 
- a:active{
+ main a:active{
     box-shadow: 1px 1px 2px var(--link-color);
 }
 

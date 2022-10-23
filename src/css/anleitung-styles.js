@@ -35,6 +35,10 @@ export const AnleitungStyles = css`
         flex-wrap: wrap;
     }
 
+    div.instImg {
+        height: min-content;
+    }
+
     .instImg img,
     .icon img {
         height: 100%;
@@ -45,6 +49,7 @@ export const AnleitungStyles = css`
         border: unset;
         box-shadow: unset;
         stroke-width: 20px;
+
     }
 
     .instStep p{

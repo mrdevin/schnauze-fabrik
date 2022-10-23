@@ -46,6 +46,7 @@ export class AppIndex extends LitElement {
 
     constructor() {
         super();
+        this.querySelector('svg').remove();
     }
 
     firstUpdated() {
@@ -124,7 +125,6 @@ export class AppIndex extends LitElement {
         registerSW({ immediate: true });
     }
 
-
     render() {
       return html`
         <div class="parent">
@@ -136,7 +136,7 @@ export class AppIndex extends LitElement {
             <footer>
                 <nav>
                     <a href="/anleitung/design-ideen">Design Ideen</a>
-                    <a href="/anleitung/">Montageanleitung</a>
+                    <a href="/anleitung/">Anleitung</a>
                     <a href="/impressum/">Impressum</a>
                     <a target="_blank" rel="noopener" href="http://schnauze-fabrik.shop">Shop</a>
                     <span>${new Date().getFullYear() } <span class="copyrightSymbol">©</span> Schnauze Fabrik</span>
