@@ -15,6 +15,10 @@ export class AppIndex extends LitElement {
           font-size: 1.3em;
           vertical-align: middle;
         }
+        #routerOutlet {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         #routerOutlet > * {
           width: 100% !important;
@@ -138,6 +142,7 @@ export class AppIndex extends LitElement {
                     <a href="/anleitung/design-ideen">Design Ideen</a>
                     <a href="/anleitung/">Anleitung</a>
                     <a href="/impressum/">Impressum</a>
+                    <a target="_blank" rel="noopener" href="http://schnauze-fabrik.app">Pattern Maker App</a>
                     <a target="_blank" rel="noopener" href="http://schnauze-fabrik.shop">Shop</a>
                     <span>${new Date().getFullYear() } <span class="copyrightSymbol">©</span> Schnauze Fabrik</span>
                 </nav>

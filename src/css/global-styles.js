@@ -4,7 +4,7 @@ export const GlobalStyles = css`
 :host, html, html * {
     --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgba(239, 229, 169, var(--highlight-color-alpha));
+    --highlight-color: rgba(239, 229, 169, var(--highlight-color-alpha, 1));
     --shadow-color-alpha: 1;
     --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
     --link-color: var(--shadow-color);
@@ -21,6 +21,8 @@ p {
 * {
     box-sizing: border-box;
 }
+
+
 
 .parent {
     min-height: 100%;

@@ -45,6 +45,10 @@ export const AnleitungStyles = css`
         max-width: 100%;
     }
 
+    .instImg img[src$=".svg"]{
+        background-color: var(--highlight-color)
+    }
+
     .icon img {
         border: unset;
         box-shadow: unset;

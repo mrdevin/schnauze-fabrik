@@ -4,6 +4,8 @@ import FlowerJpeg from '@/img/design-ideen/flower.jpeg';
 import FlowerWebp from '@/img/design-ideen/flower.webp';
 import SlantedGridJpeg from '@/img/design-ideen/slanted-grid.jpeg';
 import SlantedGridWebp from '@/img/design-ideen/slanted-grid.webp';
+import { AnleitungStyles } from '/src/css/anleitung-styles.js';
+
 @customElement('anleitung-design-ideen')
 export class AnleitungDesignIdeen extends LitElement {
 
@@ -11,20 +13,28 @@ export class AnleitungDesignIdeen extends LitElement {
 
   render() {
     return html`
+      <style>
+        ${AnleitungStyles}
+
+        .instImg {
+          display: inline-flex;
+          margin-right: 1em;
+        }
+      </style>
       <h1>Design Ideen</h1>
 
       <h2>Tiling Patterns</h2>
       <p>Here are a few examples of some patterns that you can create</p>
-      <picture height="400" width="300">
+      <picture class="instImg" height="400" width="300">
         <source type="image/webp" srcset="${FlowerWebp}">
         <img loading="lazy" src="${FlowerJpeg}">
       </picture>
 
-      <picture height="300" width="2122">
+      <picture class="instImg" height="300" width="2122">
         <source type="image/webp" srcset="${SlantedGridWebp}">
         <img loading="lazy" src="${SlantedGridJpeg}">
       </picture>
-      <p>Here are a few examples of some patterns that you can create
+      <p>Here are a few examples of some patterns that you can create.
       Many more patterns can be found in the Pattern Maker App.</p>
       <a target="_blank" rel="noopener noreferrer"  href="https://schnauze-fabrik.app">Use the Pattern Maker App</a>
 

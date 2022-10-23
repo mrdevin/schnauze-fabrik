@@ -63,7 +63,7 @@ export class PageHome extends LitElement {
         </div>
       </observed-section>
       <observed-section>
-        <h3>Wahl ihre gewünschten Farben aus. Verfügbar im 7 verschiedene Farben.</h3>
+        <p>Wahlen von 7 verschiedene Farben.</p>
         <div class="split-color">
           <cl-bl color="rgb(26, 63, 169)">Starling Blue</cl-bl>
           <cl-bl color="rgb(147,1,1)">Burgundy Velvet</cl-bl>
