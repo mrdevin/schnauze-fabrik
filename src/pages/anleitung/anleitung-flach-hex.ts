@@ -6,7 +6,6 @@ import FlachVidWebm from '@/vids/flat-hexagon-instructions.webm';
 import EnSubs from '@/vids/flat-hexagon-instructions-en.vtt?url';
 import DeSubs from '@/vids/flat-hexagon-instructions-de.vtt?url';
 import ScorelinesJpg from '@/img/anleitung-flach-hex/scorelines.jpeg';
-import FoldJpeg from '@/img/anleitung-flach-hex/fold2.jpeg';
 import SmallFlapJpg from '@/img/anleitung-flach-hex/small-flap.jpeg';
 import Outline0Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-0.svg';
 import Outline1Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-1.svg';
