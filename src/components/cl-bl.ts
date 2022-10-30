@@ -14,7 +14,7 @@ export class clBl extends LitElement {
         justify-content: center;
         position: relative;
         box-sizing: border-box;
-
+        position: relative;
       }
 
       i{
@@ -30,19 +30,45 @@ export class clBl extends LitElement {
       }
 
       :host span{
-        display: block;
-        position: absolute;
-        bottom: 2.25rem;
+        display: flex;
+        margin-top: -75%;
         background-color: var(--highlight-color);
-        border: 3.5px solid var(--shadow-color);
+        border: 3px solid var(--shadow-color);
         width: calc(var(--clbl-size) - 5.6em);
         text-align: center;
         font-size: 0.9em;
         font-weight: bold;
         font-family: 'GT-Super-Display-Super';
-        color: currentcolor;
+        color: currentolor;
         padding: 3px 5px;
         box-sizing: border-box;
+        justify-content: center;
+      }
+
+      :host span:after,
+      :host span:before {
+        content: "";
+        width: 0px;
+        height: 10px;
+        /* background-color: var(--shadow-color); */
+        display: flex;
+        align-self: flex-end;
+        margin-bottom: -23px;
+        position: absolute;
+      }
+
+
+      :host span:after {
+        right: 33.8px;
+        border-top: 7px solid var(--shadow-color);
+        border-right: 5px solid transparent;
+      }
+
+
+      :host span:before {
+        left: 33.8px;
+        border-top: 7px solid var(--shadow-color);
+        border-left: 5px solid transparent;
       }
     `
   ];
