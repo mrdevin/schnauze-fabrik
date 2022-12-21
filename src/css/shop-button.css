@@ -1,5 +1,5 @@
 .shop-button {
-  --clip-Path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  --clip-Path:  polygon(0% 12.25%, 8.75% 0%, 90% 0%, 100% 12.25%, 100% 86.63%, 90% 100%, 8.75% 100%, 0% 86.63%);
   --main-color: #ff3cac;
   --highlight-color: #fff;
   font-weight: 700;
@@ -8,7 +8,7 @@
   display: flex;
   line-height: 1;
   clip-path: var(--clip-Path);
-  background-image:  linear-gradient(to bottom right, var(--highlight-color), var(--main-color));
+  /* background-image:  linear-gradient(to bottom right, var(--highlight-color), var(--main-color)); */
   position: relative;
   display: flex;
   place-content: center;
@@ -19,6 +19,7 @@
 .shop-button .inner {
   z-index: 10;
   transform: translateY(15%);
+  /* padding: 20px; */
 }
 
 .shop-button::before {

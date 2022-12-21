@@ -21,7 +21,7 @@ export class SfModel extends LitElement {
       .shop-button {
         place-self: center;
         margin-right: auto;
-        transform:  rotate(-10deg) translateY(10px);
+        transform:  rotate(-10deg) translateY(10px) scale(1);
         position: absolute;
         right: 20px;
       }
