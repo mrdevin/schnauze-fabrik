@@ -1,17 +1,8 @@
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property, state} from 'lit/decorators.js';
 
 @customElement('observed-section')
 export class ObservedSection extends LitElement {
-  static styles = [
-    css`
-      observed-section {
-        display: block;
-        box-sizing: border-box;
-        background-color: var(--primary-color);
-      }
-    `
-  ];
 
   createRenderRoot() { return this; }
 
@@ -86,6 +77,7 @@ export class ObservedSection extends LitElement {
   render() {
     return html`
       ${this.getTitleDom()}
+
       <slot></slot>
     `;
   }

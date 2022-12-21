@@ -4,7 +4,7 @@ export const GlobalStyles = css`
 :host, html, html * {
     --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgba(239, 229, 169, var(--highlight-color-alpha, 1));
+    --highlight-color: rgb(239,219,169, var(--highlight-color-alpha, 1));
     --shadow-color-alpha: 1;
     --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
     --link-color: var(--shadow-color);
@@ -22,15 +22,12 @@ p {
     box-sizing: border-box;
 }
 
-
-
 .parent {
     min-height: 100%;
     max-width: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    /* padding: 0; */
     padding:  1rem 0;
 }
 
@@ -42,7 +39,6 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    /* padding: 0 1rem ; */
 }
 
 sf-header::part(link) {
@@ -92,8 +88,6 @@ nav a {
     vertical-align: middle;
 }
 
-
-
  main a:hover,
  main a:focus{
     box-shadow: 5px 5px 0px var(--link-color);
@@ -119,7 +113,11 @@ video {
 }
 
 observed-section {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 99vw;
+    margin-bottom: 3em;
+    justify-content: center;
 }
 
 .split-2 {
@@ -173,22 +171,30 @@ video {
 
 .split-color {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-}
-/*mobile*/
-@media (max-width: 480px) {
-   .split-color {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-    }
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 1em;
+
 }
 
-  /*tablet*/
-@media (min-width: 480px) and (max-width: 768px) {
-   .split-color {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
+.split-color-dings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.split-color-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--highlight-color);
+    height: 100%;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 5px solid var(--shadow-color);
+    padding: 15px;
 }
 
 main {

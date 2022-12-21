@@ -45,7 +45,9 @@ export class PageHome extends LitElement {
         </picture>
       </div>
 
-      <observed-section title="Wollen Sie Spitzige Fliesen Order Flach Fliesen? Beiden verfügbar für den gleichen Preis! ">
+      <observed-section>
+
+        <h3>Wollen Sie Spitzige Fliesen Order Flach Fliesen? Beiden verfügbar für den gleichen Preis!</h3>
         <div class="split-2">
           <div class="split-item">
             <h5>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</h5>
@@ -62,17 +64,23 @@ export class PageHome extends LitElement {
           </div>
         </div>
       </observed-section>
-      <observed-section>
-        <p>Wahlen von 7 verschiedene Farben.</p>
-        <div class="split-color">
+      <observed-section class="split-color">
+        <!-- <div > -->
+          <h2 class="split-color-title">Wahlen von 7 prächtig Farben.</h2>
+        <!-- </div> -->
+
+        <div class="split-color-dings">
           <cl-bl color="rgb(26, 63, 169)">Starling Blue</cl-bl>
           <cl-bl color="rgb(147,1,1)">Burgundy Velvet</cl-bl>
-          <cl-bl color="rgb(30, 112, 22)">Forest Green</cl-bl>
+          <cl-bl color="rgb(30, 112, 22)"> Forest Green</cl-bl>
           <cl-bl color="rgb(252, 85, 33)">Sunset Orange</cl-bl>
-          <cl-bl color="rgb(257, 252, 14)">Oriole Gold</cl-bl>
-          <cl-bl color="rgb(66, 160, 236)">Peacock Blue</cl-bl>
-          <cl-bl color="rgb(222, 133, 165)">Bullfinch Pink</cl-bl>
+          <cl-bl color="rgb(257, 252, 14)"> Oriole Gold</cl-bl>
+          <cl-bl color="rgb(66, 160, 236)"> Peacock Blue</cl-bl>
+          <cl-bl hidden color="rgb(222, 133, 165)"> Bullfinch Pink</cl-bl>
+          <cl-bl color="rgb(222, 133, 165)"> Bullfinch Pink</cl-bl>
+          <cl-bl hidden color="rgb(222, 133, 165)"> Bullfinch Pink</cl-bl>
         </div>
+
       </observed-section>
       <observed-section>
         <h3>Plan ihren Design. Erstellen Sie ein Design und ihr Design neu umstellen. Sie können alles ändern, so oft wie Sie willen.</h3>
