@@ -1,10 +1,10 @@
 import { css } from 'lit';
 
 export const GlobalStyles = css`
-:host, html, html * {
+:host, html {
     --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgb(239,219,169, var(--highlight-color-alpha, 1));
+    --highlight-color: rgb(239,229,169, var(--highlight-color-alpha, 1));
     --shadow-color-alpha: 1;
     --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
     --link-color: var(--shadow-color);
@@ -20,6 +20,10 @@ p {
 
 * {
     box-sizing: border-box;
+}
+
+[hidden] {
+    display: none;
 }
 
 .parent {
@@ -120,16 +124,18 @@ observed-section {
     justify-content: center;
 }
 
-.split-2 {
+.split-2, .split-grid-dings.split-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: .5em;
 }
+
 .split-item {
     display: grid;
     grid-template-rows: auto 1fr;
     row-gap: 0;
 }
+
 .split-item h5{
     background-color: var(--highlight-color);
     text-align: center;
@@ -161,6 +167,7 @@ observed-section {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 video {
@@ -169,21 +176,28 @@ video {
     max-width: 100vw;
 }
 
-.split-color {
+.split-grid,
+.split-grid-alt {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 1em;
-
 }
 
-.split-color-dings {
+
+.split-grid-alt {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.split-grid-dings {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.split-color-title {
+.split-grid-title,
+.split-grid-title-alt {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -197,12 +211,21 @@ video {
     padding: 15px;
 }
 
+.split-grid-title-alt {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-right: unset;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px solid var(--shadow-color);
+}
+
 main {
     padding: 1em 16px 16px 16px;
     max-width: 900px;
     margin: var(--sf-logo-size) auto 0;
     width: 100%;
-
     min-height:calc(100vh - (350px));
     min-height: calc(100svh - (350px));
 }
@@ -220,11 +243,6 @@ li {
 
 footer {
     display: flex;
-    --primary-color-hue: 50;
-    --primary-color-saturation: 100%;
-    --primary-color-luminance: 34%;
-    --primary-color-alpha: 1;
-    background-color: var(--primary-color);
     padding: 1rem ;
     align-items: center;
     justify-content: center;

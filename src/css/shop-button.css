@@ -1,0 +1,55 @@
+.shop-button {
+  --clip-Path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  --main-color: #ff3cac;
+  --highlight-color: #fff;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  line-height: 1;
+  clip-path: var(--clip-Path);
+  background-image:  linear-gradient(to bottom right, var(--highlight-color), var(--main-color));
+  position: relative;
+  display: flex;
+  place-content: center;
+  text-decoration: none;
+  box-shadow: var(--shadow-color) 5px 5px 5px 1px;
+
+}
+.shop-button .inner {
+  z-index: 10;
+  transform: translateY(15%);
+}
+
+.shop-button::before {
+  --border-size: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% - (var(--border-size)*2));
+  height: calc(100% - (var(--border-size)*2));
+  top: var(--border-size);
+  left: var(--border-size);
+  background-color: var(--main-color);
+  clip-path: var(--clip-Path);
+  z-index: 1;
+}
+.shop-button--primary {
+  color: var(--highlight-color);
+  background-color: var(--main-color);
+}
+.shop-button--secondary {
+  background-color: transparent;
+}
+.shop-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.shop-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.shop-button--large {
+  font-size: 34px;
+  padding: 12px 24px;
+}

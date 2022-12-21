@@ -64,12 +64,12 @@ export class PageHome extends LitElement {
           </div>
         </div>
       </observed-section>
-      <observed-section class="split-color">
+      <observed-section class="split-grid">
         <!-- <div > -->
-          <h2 class="split-color-title">Wahlen von 7 prächtig Farben.</h2>
+          <h2 class="split-grid-title">Wahlen von 7 prächtig Farben.</h2>
         <!-- </div> -->
 
-        <div class="split-color-dings">
+        <div class="split-grid-dings">
           <cl-bl color="rgb(26, 63, 169)">Starling Blue</cl-bl>
           <cl-bl color="rgb(147,1,1)">Burgundy Velvet</cl-bl>
           <cl-bl color="rgb(30, 112, 22)"> Forest Green</cl-bl>
@@ -82,10 +82,9 @@ export class PageHome extends LitElement {
         </div>
 
       </observed-section>
-      <observed-section>
-        <h3>Plan ihren Design. Erstellen Sie ein Design und ihr Design neu umstellen. Sie können alles ändern, so oft wie Sie willen.</h3>
-        <p>Welche Form passt zu ihrer Lust, zu ihrem Leben und zu ihrer Wand? Spiel mit aller die verschiedene Möglichkeiten und wähle ihre Favoriten aus.</p>
-        <div class="split-2">
+      <observed-section class="split-grid-alt">
+
+        <div class="split-grid-dings split-2">
           <picture class="split-item">
             <source type="image/webp" srcset="${WallCloseOneWebp}">
             <img loading="lazy" src="${WallCloseOneJpeg}">
@@ -94,6 +93,12 @@ export class PageHome extends LitElement {
             <source type="image/webp" srcset="${FlowerWebp}">
             <img loading="lazy" src="${FlowerJpeg}">
           </picture>
+        </div>
+        <div class="split-grid-title-alt">
+          <h3>Plan ihren Design.<br>
+          Erstellen Sie ein Design und ihr Design neu umstellen.<br>
+          Sie können alles ändern, so oft wie Sie willen.</h3>
+          <p>Welche Form passt zu ihrer Lust, zu ihrem Leben und zu ihrer Wand? Spiel mit aller die verschiedene Möglichkeiten und wähle ihre Favoriten aus.</p>
         </div>
       </observed-section>
       <observed-section last>

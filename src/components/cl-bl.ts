@@ -16,11 +16,13 @@ export class clBl extends LitElement {
         box-sizing: border-box;
         position: relative;
         height: var(--clbl-size);
+        max-width: var(--clbl-size);
         margin-bottom: 1rem;
       }
 
       :host([hidden]){
         visibility: hidden;
+        display: flex !important;
       }
 
       svg {
@@ -33,21 +35,21 @@ export class clBl extends LitElement {
 
   svgStyles = css`
       .st0{
-          fill:#efdba9;
-          stroke:#282828;
+          fill:var(--highlight-color);
+          stroke:var(--shadow-color);
           stroke-width:3;
           stroke-miterlimit:0;
       }
 
       .st1{
         fill:var(--clbl-color);
-        stroke:#282828;
+        stroke:var(--shadow-color);
         stroke-width: 6px;
         stroke-linejoin: round;
       }
 
       .st2{
-        fill:#282828;
+        fill:var(--shadow-color);
         font-family:'GTSuperDisplay-Super';
         font-size:24px;
       }
@@ -55,13 +57,13 @@ export class clBl extends LitElement {
       .st3{
         opacity:.3;
         fill:none;
-        stroke:#282828;
+        stroke:var(--shadow-color);
         stroke-width:4;
         stroke-miterlimit:10
       }
 
       .st4{
-        fill:#efdba9
+        fill:var(--highlight-color)
       }
 
       .st5{

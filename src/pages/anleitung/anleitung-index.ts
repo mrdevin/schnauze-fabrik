@@ -23,21 +23,26 @@ export class AnleitungIndex extends LitElement {
             <h2>Einfache Montage, Teile herausnehmen, falten,
                 kleben und auf die Wand hängen.</h2>
 
-            <h3>Flache Fliese - Montageanleitung</h3>
-            <picture class="icon">
-                <img height="253" width="400" loading="lazy" src="${FlatSvg}">
-            </picture>
-            <a href="/anleitung/flach-hex">zum Anleitung mit video.
-
-            </a>
-
-            <h3>Spitzig Fliese - Montageanleitung</h3>
-            <picture class="icon">
-                <img height="253" width="400" loading="lazy" src="${PointedSvg}">
-            </picture>
-            <a href="/anleitung/spitzig-hex">zum Anleitung mit video.
-
-            </a>
+            <div class="split-2">
+                <div>
+                    <h3>Flache Fliese - Montageanleitung</h3>
+                    <picture class="icon">
+                        <img height="253" width="400" loading="lazy" src="${FlatSvg}">
+                    </picture>
+                    <a href="/anleitung/flach-hex">
+                        zum Anleitung mit video.
+                    </a>
+                </div>
+                <div>
+                    <h3>Spitzig Fliese - Montageanleitung</h3>
+                    <picture class="icon">
+                        <img height="253" width="400" loading="lazy" src="${PointedSvg}">
+                    </picture>
+                    <a href="/anleitung/spitzig-hex">
+                        zum Anleitung mit video.
+                    </a>
+                </div>
+            </div>
             <h3>Ressourcen</h3>
             <a href="/anleitung/tips">Tips Und Tricks </a>
             <br/>
