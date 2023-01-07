@@ -3,21 +3,24 @@ html {
     min-height: 100vh;
     min-height: 100svh;
     background-color: var(--primary-color);
-    font-family:  'Courier New', Courier, monospace;
+    color: var(--shadow-color);
     font-family: 'JosefinSans', Tahoma, Verdana, Segoe, sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
 }
 
- html {
+ html, :root {
     --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgb(239,229,169, var(--highlight-color-alpha, 1));
-    --shadow-color-alpha: 1;
-    --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
+    --highlight-color: rgb(239,229,169, 1);
+    --shadow-main-value: 40;
+    --shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), 1);
     --link-color: var(--shadow-color);
     --sf-logo-size: 111px;
+    --accent-color: rgba(229, 11, 168, 1);
+    --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
+    --drop-shadow:  drop-shadow( 3px 4px 2px var(--drop-shadow-color));
 }
 
 @font-face {
@@ -27,6 +30,7 @@ html {
         url('/src/fonts/GT-Super-Display-Super.ttf') format('truetype');
 font-display: swap;
 }
+
 @font-face {
 font-family: 'JosefinSans';
     src: url('/src/fonts/JosefinSans-Regular.woff') format('woff'),
@@ -51,6 +55,11 @@ h1, h2, h3, h4, h5, h6  {
     box-sizing: border-box;
 }
 
+a:-webkit-any-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
 p {
     margin-bottom: 1.8em;
 }
@@ -61,4 +70,13 @@ p {
 
 app-index > svg {
     margin: 0 auto;
+}
+
+observed-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 99vw;
+    margin-bottom: 3em;
+    justify-content: center;
+    z-index: 1;
 }

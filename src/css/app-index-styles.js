@@ -7,7 +7,7 @@ export const AppIndexStyles = css`
             display: grid;
             grid-template-rows: 1fr;
             margin: 0 auto;
-            padding:  1rem 0;
+            padding: 0;
         }
 
         .copyrightSymbol {
@@ -17,6 +17,15 @@ export const AppIndexStyles = css`
         #routerOutlet {
             display: flex;
             flex-wrap: wrap;
+        }
+
+        a {
+          color: currentColor;
+          text-decoration: none;
+        }
+
+        main {
+          padding: 0 .5em;
         }
 
         #routerOutlet > * {
@@ -51,14 +60,6 @@ export const AppIndexStyles = css`
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-evenly;
-        }
-
-        observed-section {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 99vw;
-            margin-bottom: 3em;
-            justify-content: center;
         }
 
         video {

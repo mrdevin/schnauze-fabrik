@@ -1,47 +1,19 @@
 .shop-button {
-  --clip-Path:  polygon(0% 12.25%, 8.75% 0%, 90% 0%, 100% 12.25%, 100% 86.63%, 90% 100%, 8.75% 100%, 0% 86.63%);
-  --main-color: #ff3cac;
-  --highlight-color: #fff;
   font-weight: 700;
-  border: 0;
-  cursor: pointer;
-  display: flex;
-  line-height: 1;
-  clip-path: var(--clip-Path);
-  /* background-image:  linear-gradient(to bottom right, var(--highlight-color), var(--main-color)); */
-  position: relative;
-  display: flex;
-  place-content: center;
-  text-decoration: none;
-  box-shadow: var(--shadow-color) 5px 5px 5px 1px;
+  font-size: 32px;
+  font-family: 'GT-Super-Display-Super';
+  transform:  rotate(-8.12deg) translateY(-5px) scale(1);
+  filter: var(--drop-shadow);
 
 }
 .shop-button .inner {
-  z-index: 10;
-  transform: translateY(15%);
-  /* padding: 20px; */
+  --clip-Path:  polygon(0% 12.25%, 8.75% 0%, 90% 0%, 100% 12.25%, 100% 86.63%, 90% 100%, 8.75% 100%, 0% 86.63%);
+  clip-path: var(--clip-Path);
+  background-color: var(--accent-color);
+  padding: .3em .5em;
+  color: var(--highlight-color);
 }
 
-.shop-button::before {
-  --border-size: 2px;
-  content: '';
-  display: block;
-  position: absolute;
-  width: calc(100% - (var(--border-size)*2));
-  height: calc(100% - (var(--border-size)*2));
-  top: var(--border-size);
-  left: var(--border-size);
-  background-color: var(--main-color);
-  clip-path: var(--clip-Path);
-  z-index: 1;
-}
-.shop-button--primary {
-  color: var(--highlight-color);
-  background-color: var(--main-color);
-}
-.shop-button--secondary {
-  background-color: transparent;
-}
 .shop-button--small {
   font-size: 12px;
   padding: 10px 16px;
@@ -51,6 +23,6 @@
   padding: 11px 20px;
 }
 .shop-button--large {
-  font-size: 34px;
-  padding: 12px 24px;
+  font-size: 32px;
+  padding: 10px 20px;
 }

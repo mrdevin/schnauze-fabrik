@@ -16,7 +16,6 @@ export class AppIndex extends LitElement {
     ]
 
 
-
     constructor() {
         super();
         this.querySelector('svg').remove();
