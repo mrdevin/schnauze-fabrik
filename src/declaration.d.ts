@@ -5,6 +5,7 @@ declare module '*.jpg';
 declare module '*.jpg?url';
 declare module '*.svg';
 declare module '*.svg?url';
+declare module '*.svg?inline';
 declare module '*.jpeg';
 declare module '*.jpeg?url';
 declare module '*.webp';

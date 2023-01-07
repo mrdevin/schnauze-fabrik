@@ -15,6 +15,7 @@ import slide7 from '../img/home/slide7.jpg?url';
 import slide8 from '../img/home/slide8.jpg?url';
 import slide9 from '../img/home/slide9.jpg?url';
 import slide10 from '../img/home/slide10.jpg?url';
+import star from '../img/home/star.svg?url';
 import FlatAssemblyMp4 from '/src/vids/flach-tile-assembly.mp4';
 import FlatAssemblyWebm from '/src/vids/flach-tile-assembly.webm';
 
@@ -121,6 +122,7 @@ export class PageHome extends LitElement {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1rem;
+        position: relative;
       }
 
       .model-wrap {
@@ -128,6 +130,42 @@ export class PageHome extends LitElement {
         border: 7px solid var(--highlight-color);
         min-height: 325px;
       }
+
+      .mixMatch {
+        display: grid;
+        grid-template-rows: 1fr 38px 1fr;
+        width: 127px;
+        height: 139px;
+        background-image: url(${unsafeCSS(star)});
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        place-items: center;
+        place-content: center;
+        font-family: 'GT-Super-Display-Super';
+      }
+
+      .mixMatch div{
+        display: flex;
+        font-size: 18px;
+        color: var(--highlight-color);
+      }
+
+      .mixMatch div:nth-of-type(1){
+        align-self: end;
+      }
+      .mixMatch div:nth-of-type(3){
+        align-self: start;
+      }
+
+      .mixMatch div:nth-of-type(2){
+        font-size: 44px;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--highlight-color);
+      }
+
       .model-wrap header {
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
@@ -173,9 +211,10 @@ export class PageHome extends LitElement {
         justify-self: center;
         text-shadow: 3px 4px 2px rgba(239, 229, 169, 0.25);
         position: absolute;
-        top: 2.5rem;
+        top: 1.2rem;
         left: 50%;
         transform: translateX(-50%);
+        font-family: 'GT-Super-Display-Super';
       }
 
       .colors-section:after {
@@ -279,7 +318,7 @@ export class PageHome extends LitElement {
           <img alt="Heagonal Wandkunst" src="${slide10}">
         </slide-show>
       </observed-section>
-      <observed-section>
+      <observed-section class="">
         <h2 class="tape-title">Wollen sie spitzige Fliesen oder flache Fliesen?</h2>
         <p>Beiden verfügbar für den gleichen Preis!</p>
         <div class="models">
@@ -296,7 +335,13 @@ export class PageHome extends LitElement {
               <span hidden slot="progress-bar"></span>
             </sf-model>
           </div>
+          <div class="mixMatch">
+            <div>Mix</div>
+            <div>&</div>
+            <div>Match</div>
+          </div>
         </div>
+
       </observed-section>
       <observed-section class="colors-section">
         <div class="colors-title">
