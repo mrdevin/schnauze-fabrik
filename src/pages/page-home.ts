@@ -66,7 +66,7 @@ export class PageHome extends LitElement {
       </observed-section>
       <observed-section class="split-grid">
         <!-- <div > -->
-          <h2 class="split-grid-title">Wahlen von 7 prächtig Farben.</h2>
+          <h2 class="split-grid-title"><span>Wahlen von 7 prächtig Farben.</span></h2>
         <!-- </div> -->
 
         <div class="split-grid-dings">

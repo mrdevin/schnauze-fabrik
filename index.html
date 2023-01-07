@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+<link>
     <meta charset="UTF-8">
     <meta name="description" content="Design your SPACE with DIY 3D paper Skulpture">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,59 +23,16 @@
 
     <meta name="theme-color" content="#000000">
     <style>
-        :root, html{
-            --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
-            --logo-secondary-fill: var(--primary-color);
-            --highlight-color-alpha: 1;
-            --highlight-color: rgba(239, 229, 169, var(--highlight-color-alpha));
-            --shadow-color-alpha: 1;
-            --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
-        }
-        @font-face {
-            font-family: 'GT-Super-Display-Super';
-            src: url('/src/fonts/GT-Super-Display-Super.woff2') format('woff2'),
-                url('/src/fonts/GT-Super-Display-Super.woff') format('woff'),
-                url('/src/fonts/GT-Super-Display-Super.ttf') format('truetype');
-        font-display: swap;
-        }
-        @font-face {
-        font-family: 'JosefinSans';
-            src: url('/src/fonts/JosefinSans-Regular.woff') format('woff'),
-                url('/src/fonts/JosefinSans-Regular.ttf') format('truetype');
-        font-display: swap;
-        font-weight: normal;
-        }
-
-        @font-face {
-        font-family: 'JosefinSans';
-            src: url('/src/fonts/JosefinSans-Bold.woff') format('woff'),
-                url('/src/fonts/JosefinSans-Bold.ttf') format('truetype');
-        font-display: swap;
-        font-weight: bold;
-        }
-
-
-
-        body,
-        html {
-            min-height: 100vh;
-            min-height: 100svh;
-            background-color: var(--primary-color);
-            font-family:  'Courier New', Courier, monospace;
-            font-family: 'JosefinSans', Tahoma, Verdana, Segoe, sans-serif;
-            font-size: 20px;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1, h2, h3, h4, h6 {
-            font-family: 'GT-Super-Display-Super', Rockwell, serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
+        /* :root, html {
+    --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
+    --logo-secondary-fill: var(--primary-color);
+    --highlight-color: rgb(239,229,169, var(--highlight-color-alpha, 1));
+    --shadow-color-alpha: 1;
+    --shadow-color: rgba(40, 40, 40, var(--shadow-color-alpha));
+    --link-color: var(--shadow-color);
+} */
     </style>
+    <link rel="stylesheet" href="/src/css/global-styles.css">
     <script type="module" src="/src/app-index.ts"></script>
 
 </head>

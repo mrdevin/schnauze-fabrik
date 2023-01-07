@@ -1,87 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="207.4px" height="210.2px" viewBox="0 0 207.4 210.2" style="enable-background:new 0 0 207.4 210.2;" xml:space="preserve"
-	>
-<style type="text/css">
-	.st0{fill:#AF7E12;}
-	.st1{fill:#BAAA86;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:12px;}
-</style>
-<path id="banner-left" d="M2.1,94.8c-0.1-1.7,1.5-3.3,6.6-4c2.5-0.4,7-0.2,7-0.2l-2.1,10.9C13.6,101.5,2.2,96.3,2.1,94.8z"/>
-<path id="banner-right" d="M201,78.3c0,0-1.9-2.4-6-3.1c-2.5-0.4-8,0.1-8,0.1l-0.1,8.7l14.9-1.1L201,78.3L201,78.3z"/>
-<g id="hex">
-	<path d="M11.6,155.9V54.3l88-50.8l88,50.8v101.6l-88,50.8L11.6,155.9z"/>
-</g>
-<path id="banner-shadow" d="M3.2,123.4C2.4,110.7,2.5,98.9,2.8,95c6.8,1.3,25,0.8,39.7,0c46-2.2,139.3-10.7,153.4-18.7
-	c7.8,7.8,7.9,49.1,4.2,57.5c-3.7,5.2-82,16.9-144.6,19.9c-25.4,1.2-42.3,0.6-47.6-1.9C6.7,151,4.4,144.1,3.2,123.4"/>
-<g id="banner">
-	<path class="st0" d="M31.8,151.5c-15.7,0-22-1.2-24.5-2.2c-0.3-0.4-3-4.1-4.3-27c-0.7-11.4-0.6-21.4-0.3-25.6
-		c2.8,0.4,7.1,0.6,12.9,0.6c22.1,0,65.3-2.8,105-6.7c25.6-2.5,68.6-7.5,78.5-12.6c0.8,0.5,1.5,1.5,2,2.4c5.7,10.8,4.2,43.9,0.9,51.4
-		c-2.2,1.8-18.9,6.5-67.5,12.3C95.6,148.6,56.3,151.5,31.8,151.5L31.8,151.5z"/>
-	<path class="st1" d="M198.6,80.9c1.5,2.4,3.5,9.3,3.8,22.5c0.2,12.2-1.2,22.7-2.4,26.5c-4.4,2.1-25,6.7-67.4,11.7
-		c-38.2,4.5-76.8,7.3-100.8,7.3c-14.5,0-20.4-1-22.7-1.7c-1-2.2-2.7-9.6-3.6-25.8C5,112,5,104,5.1,99.3c2.4,0.2,5.8,0.3,10.5,0.3
-		c22.2,0,65.5-2.8,105.3-6.7c20.6-2.1,38.7-4.3,52.1-6.4C187.9,84.3,194.9,82.5,198.6,80.9 M198.8,75.2
-		C188.5,83.4,61,94.7,15.6,94.7c-7.5,0-12.8-0.3-14.9-1c-1.5,0-0.9,54.1,5.4,57.8c3.9,1.7,13.2,2.5,25.7,2.5
-		c54.2,0,169-13.8,172.4-21C208.4,124.1,210.2,76.9,198.8,75.2L198.8,75.2z"/>
-</g>
-<path id="textPath" d="M6.1,130.9c8.8,2.2,46.3,1,98.5-4.2c52.1-5.1,84.1-9,97.7-14.5"/>
-<text transform="matrix(0.9881 0.154 -0.154 0.9881 7.2884 130.564)" class="st2 st3"> </text>
-<text transform="matrix(0.9968 7.989705e-02 -7.989705e-02 0.9968 10.586 131.0584)" class="st2 st3"> </text>
-<text transform="matrix(0.999 4.404573e-02 -4.404573e-02 0.999 13.9102 131.3195)" class="st2 st3"> </text>
-<text transform="matrix(0.9998 2.161164e-02 -2.161164e-02 0.9998 17.2413 131.4641)" class="st2 st3"> </text>
-<text transform="matrix(1 5.701279e-03 -5.701279e-03 1 20.5743 131.5344)" class="st2 st3"> </text>
-<text transform="matrix(1 -6.458663e-03 6.458663e-03 1 23.9084 131.5527)" class="st2 st3"> </text>
-<text transform="matrix(0.9999 -1.622732e-02 1.622732e-02 0.9999 27.2424 131.5307)" class="st2 st3"> </text>
-<text transform="matrix(0.9997 -2.436008e-02 2.436008e-02 0.9997 30.5757 131.476)" class="st2 st3"> </text>
-<text transform="matrix(0.9995 -3.131480e-02 3.131480e-02 0.9995 33.9089 131.3947)" class="st2 st3"> </text>
-<text transform="matrix(0.9993 -3.738749e-02 3.738749e-02 0.9993 37.2413 131.29)" class="st2 st3"> </text>
-<text transform="matrix(0.9991 -4.277934e-02 4.277934e-02 0.9991 40.5729 131.1651)" class="st2 st3"> </text>
-<text transform="matrix(0.9989 -4.763253e-02 4.763253e-02 0.9989 43.904 131.0227)" class="st2 st3"> </text>
-<text transform="matrix(0.9986 -5.205091e-02 5.205091e-02 0.9986 47.2339 130.8634)" class="st2 st3"> </text>
-<text transform="matrix(0.9984 -5.611232e-02 5.611232e-02 0.9984 50.5636 130.69)" class="st2 st3"> </text>
-<text transform="matrix(0.9982 -5.987647e-02 5.987647e-02 0.9982 53.8922 130.5027)" class="st2 st3"> </text>
-<text transform="matrix(0.998 -6.339006e-02 6.339006e-02 0.998 57.2202 130.303)" class="st2 st3"> </text>
-<text transform="matrix(0.9978 -6.669020e-02 6.669020e-02 0.9978 60.5474 130.0915)" class="st2 st3"> </text>
-<text transform="matrix(0.9976 -6.980687e-02 6.980687e-02 0.9976 63.8739 129.8691)" class="st2 st3"> </text>
-<text transform="matrix(0.9973 -7.276456e-02 7.276456e-02 0.9973 67.1999 129.6365)" class="st2 st3"> </text>
-<text transform="matrix(0.9971 -7.558357e-02 7.558357e-02 0.9971 70.525 129.3938)" class="st2 st3"> </text>
-<text transform="matrix(0.9969 -7.828082e-02 7.828082e-02 0.9969 73.8498 129.1421)" class="st2 st3"> </text>
-<text transform="matrix(0.9967 -8.087057e-02 8.087057e-02 0.9967 77.1733 128.8808)" class="st2 st3"> </text>
-<text transform="matrix(0.9965 -8.336494e-02 8.336494e-02 0.9965 80.4964 128.6113)" class="st2 st3"> </text>
-<text transform="matrix(0.9963 -8.577445e-02 8.577445e-02 0.9963 83.8188 128.3333)" class="st2 st3"> </text>
-<text transform="matrix(0.9961 -8.810806e-02 8.810806e-02 0.9961 87.1404 128.0472)" class="st2 st3"> </text>
-<text transform="matrix(0.9959 -9.037355e-02 9.037355e-02 0.9959 90.4616 127.7537)" class="st2 st3"> </text>
-<text transform="matrix(0.9957 -9.257782e-02 9.257782e-02 0.9957 93.7816 127.452)" class="st2 st3"> </text>
-<text transform="matrix(0.9955 -9.472685e-02 9.472685e-02 0.9955 97.1015 127.1435)" class="st2 st3"> </text>
-<text transform="matrix(0.9952 -9.786014e-02 9.786014e-02 0.9952 100.4206 126.8301)" class="st2 st3">$</text>
-<text transform="matrix(0.9952 -9.806550e-02 9.806550e-02 0.9952 107.0623 126.1766)" class="st2 st3">{</text>
-<text transform="matrix(0.9951 -9.888078e-02 9.888078e-02 0.9951 111.0509 125.7837)" class="st2 st3">t</text>
-<text transform="matrix(0.995 -0.1002 0.1002 0.995 114.3683 125.455)" class="st2 st3">h</text>
-<text transform="matrix(0.9948 -0.1016 0.1016 0.9948 121.0086 124.7854)" class="st2 st3">i</text>
-<text transform="matrix(0.9947 -0.1031 0.1031 0.9947 123.6606 124.5156)" class="st2 st3">s</text>
-<text transform="matrix(0.9945 -0.105 0.105 0.9945 129.6286 123.896)" class="st2 st3">.</text>
-<text transform="matrix(0.9943 -0.1066 0.1066 0.9943 132.9442 123.5458)" class="st2 st3">t</text>
-<text transform="matrix(0.9941 -0.1082 0.1082 0.9941 136.2593 123.19)" class="st2 st3">i</text>
-<text transform="matrix(0.9939 -0.1099 0.1099 0.9939 138.9095 122.9021)" class="st2 st3">t</text>
-<text transform="matrix(0.9937 -0.1118 0.1118 0.9937 142.2233 122.5357)" class="st2 st3">l</text>
-<text transform="matrix(0.9933 -0.1152 0.1152 0.9933 144.873 122.2412)" class="st2 st3">e</text>
-<text transform="matrix(0.9928 -0.1198 0.1198 0.9928 151.5022 121.4697)" class="st2 st3">}</text>
-<text transform="matrix(0.9923 -0.1235 0.1235 0.9923 155.4811 120.9893)" class="st2 st3"> </text>
-<text transform="matrix(0.9918 -0.1274 0.1274 0.9918 158.7896 120.5776)" class="st2 st3"> </text>
-<text transform="matrix(0.9913 -0.1319 0.1319 0.9913 162.0962 120.1524)" class="st2 st3"> </text>
-<text transform="matrix(0.9906 -0.1369 0.1369 0.9906 165.4011 119.7132)" class="st2 st3"> </text>
-<text transform="matrix(0.9898 -0.1428 0.1428 0.9898 168.7039 119.257)" class="st2 st3"> </text>
-<text transform="matrix(0.9887 -0.1496 0.1496 0.9887 172.0036 118.781)" class="st2 st3"> </text>
-<text transform="matrix(0.9875 -0.1576 0.1576 0.9875 175.3001 118.2825)" class="st2 st3"> </text>
-<text transform="matrix(0.9859 -0.1671 0.1671 0.9859 178.5926 117.7576)" class="st2 st3"> </text>
-<text transform="matrix(0.984 -0.1784 0.1784 0.984 181.8799 117.201)" class="st2 st3"> </text>
-<text transform="matrix(0.9813 -0.1923 0.1923 0.9813 185.1608 116.6073)" class="st2 st3"> </text>
-<text transform="matrix(0.9778 -0.2096 0.2096 0.9778 188.4326 115.9667)" class="st2 st3"> </text>
-<text transform="matrix(0.9728 -0.2316 0.2316 0.9728 191.6931 115.2698)" class="st2 st3"> </text>
-<text transform="matrix(0.9654 -0.2607 0.2607 0.9654 194.9371 114.5)" class="st2 st3"> </text>
-<text transform="matrix(0.9537 -0.3009 0.3009 0.9537 198.1577 113.6351)" class="st2 st3"> </text>
-<text transform="matrix(0.933 -0.36 0.36 0.933 201.3408 112.6388)" class="st2 st3"> </text>
-<text id="name" class="st2 st3">       </text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1"
+	x="0" y="0" style="enable-background:new 0 0 207.4 210.2" version="1.1" viewBox="0 0 207.4 210.2">
+	<style>
+		<!--
+		-->
+		.st0 {
+			fill: #efdba9;
+			stroke: #282828;
+			stroke-width: 3;
+			stroke-miterlimit: 0
+		}
+
+		.st1 {
+			fill: var(--clbl-color);
+			stroke: #282828;
+			stroke-width: 6px;
+			stroke-linejoin: round
+		}
+
+		.st2 {
+			fill: #282828;
+			font-family: GTSuperDisplay-Super;
+			font-size: 24px
+		}
+
+		.st3 {
+			opacity: .3;
+			fill: none;
+			stroke: #282828;
+			stroke-width: 4;
+			stroke-miterlimit: 10
+		}
+
+		.st4 {
+			fill: #efdba9
+		}
+
+		.st5 {
+			fill: none
+		}
+	<!---->
+	</style>
+	<path id="banner-left" d="M2.1 94.8c-.1-1.7 1.5-3.3 6.6-4 2.5-.4 7-.2 7-.2l-2.1 10.9S2.2 96.3 2.1 94.8z"
+		class="st0"></path>
+	<path id="banner-right" d="M201 78.3s-1.9-2.4-6-3.1c-2.5-.4-8 .1-8 .1l-.1 8.7 14.9-1.1-.8-4.6z" class="st0"></path>
+	<g id="hex">
+		<path d="M11.6 155.9V54.3l88-50.8 88 50.8v101.6l-88 50.8z" class="st1"></path>
+	</g>
+	<path id="banner-shadow"
+		d="M3.2 123.4c-.8-12.7-.7-24.5-.4-28.4 6.8 1.3 25 .8 39.7 0 46-2.2 139.3-10.7 153.4-18.7 7.8 7.8 7.9 49.1 4.2 57.5-3.7 5.2-82 16.9-144.6 19.9-25.4 1.2-42.3.6-47.6-1.9-1.2-.8-3.5-7.7-4.7-28.4"
+		class="st3"></path>
+	<g id="banner">
+		<path
+			d="M31.8 151.5c-15.7 0-22-1.2-24.5-2.2-.3-.4-3-4.1-4.3-27-.7-11.4-.6-21.4-.3-25.6 2.8.4 7.1.6 12.9.6 22.1 0 65.3-2.8 105-6.7 25.6-2.5 68.6-7.5 78.5-12.6.8.5 1.5 1.5 2 2.4 5.7 10.8 4.2 43.9.9 51.4-2.2 1.8-18.9 6.5-67.5 12.3-38.9 4.5-78.2 7.4-102.7 7.4z"
+			class="st4"></path>
+		<path
+			d="M198.6 80.9c1.5 2.4 3.5 9.3 3.8 22.5.2 12.2-1.2 22.7-2.4 26.5-4.4 2.1-25 6.7-67.4 11.7-38.2 4.5-76.8 7.3-100.8 7.3-14.5 0-20.4-1-22.7-1.7-1-2.2-2.7-9.6-3.6-25.8C5 112 5 104 5.1 99.3c2.4.2 5.8.3 10.5.3 22.2 0 65.5-2.8 105.3-6.7 20.6-2.1 38.7-4.3 52.1-6.4 14.9-2.2 21.9-4 25.6-5.6m.2-5.7C188.5 83.4 61 94.7 15.6 94.7c-7.5 0-12.8-.3-14.9-1-1.5 0-.9 54.1 5.4 57.8 3.9 1.7 13.2 2.5 25.7 2.5 54.2 0 169-13.8 172.4-21 4.2-8.9 6-56.1-5.4-57.8z"
+			class="st2"></path>
+	</g>
+	<path id="textPath" d="M6.1,130.9c8.8,2.2,46.3,1,98.5-4.2c52.1-5.1,84.1-9,97.7-14.5" class="st5"></path><text
+		id="name">
+		<textPath text-anchor="middle" xlink:href="#textPath" startOffset="50%">
+			<tspan id="titleEl" class="st2">
+				<!--?lit$040121979$-->Sunset Orange
+			</tspan>
+		</textPath>
+	</text>
 </svg>

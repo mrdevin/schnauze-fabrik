@@ -9,7 +9,7 @@ export class SfModel extends LitElement {
       :host {
         display: flex;
         place-content: center;
-        --sf-logo-size: 250px;
+        --sf-logo-size: 111px;
         border-bottom: 3px solid #f7efc7;
       }
 
@@ -34,62 +34,6 @@ export class SfModel extends LitElement {
 
   constructor(){
     super();
-    console.log('this.animateSvg',this.animateSvg);
-    document.body.style.setProperty('--sf-logo-size', `218px`);
-
-    requestAnimationFrame(()=>{
-      //for the case when the browser loads and the scroll is prerendered in the middle of the page.
-      if (window.scrollY > 200){
-        this.setNewHeaderDimensions(80);
-        this.shadowRoot.addEventListener('transitionend', ()=>{
-          this.animateSvg = false;
-        });
-      }else{
-        this.animateSvg = false;
-      }
-    });
-
-    window.addEventListener('scroll',()=>{
-      this.updateHeaderDimensions();
-    })
-  }
-
-  @state()
-  oldScroll: Number = 0;
-
-  @property({ type: Boolean, attribute: 'animate-svg', reflect: true })
-  animateSvg: boolean = true;
-
-  @property({type: Number})
-  minHeaderHeight: number = 80;
-
-  @property({ type: Number })
-  maxHeaderHeight: number = 250;
-
-  updateHeaderDimensions(){
-    if(window.scrollY > 0 && window.scrollY < 200){
-      this.setNewHeaderDimensions(this.caculateNewHeaderDimensions());
-    }
-
-    this.oldScroll = window.scrollY
-  }
-
-  setNewHeaderDimensions(value){
-    this.style.setProperty('--sf-logo-size', `${value}px`);
-    document.body.style.setProperty('--sf-logo-size', `${value}px`);
-  }
-
-  caculateNewHeaderDimensions(){
-    let currentVal = parseInt(getComputedStyle(this).getPropertyValue(
-      "--sf-logo-size"
-    ));
-
-    let newValue = 0;
-    // @ts-ignore
-    newValue = currentVal - (window.scrollY - this.oldScroll);
-    newValue = newValue < this.minHeaderHeight ? this.minHeaderHeight : newValue;
-    newValue = newValue > this.maxHeaderHeight ? this.maxHeaderHeight : newValue;
-    return newValue;
   }
 
   render() {
