@@ -25,7 +25,7 @@ export class SfModel extends LitElement {
         top: 0;
         margin-bottom: 1em;
         background-color: var(--primary-color);
-        box-shadow: 0 10px  10px 5px var(--primary-color);
+        box-shadow: 0 5px  3px 0px var(--primary-color);
         z-index: 100;
       }
 
@@ -90,7 +90,6 @@ export class SfModel extends LitElement {
     </a>
     <h2>Dimension auf ihre Wand bringen!</h2>
     </div>
-
 
     <nav>
       <a href="/anleitung/">Anleitung</a>

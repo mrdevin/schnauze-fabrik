@@ -8,7 +8,7 @@ export class clBl extends LitElement {
       :host {
         display: flex;
         flex-wrap: wrap;
-        --clbl-size: 150px;
+        /* --clbl-size: 150px; */
         --clbl-color: currentColor;
         align-items: center;
         justify-content: center;

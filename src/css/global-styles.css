@@ -21,6 +21,7 @@ html {
     --accent-color: rgba(229, 11, 168, 1);
     --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
     --drop-shadow:  drop-shadow( 3px 4px 2px var(--drop-shadow-color));
+    --clbl-size: 127px;
 }
 
 @font-face {

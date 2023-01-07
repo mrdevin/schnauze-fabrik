@@ -13,9 +13,21 @@ export class SlideShow extends LitElement {
         height: 360px;
         overflow: hidden;
         display:block;
+        position: relative;
+      }
+
+      ::slotted(img){
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
       }
     `
   ];
+
+  firstUpdated(){
+
+  }
 
   render() {
     return html`
