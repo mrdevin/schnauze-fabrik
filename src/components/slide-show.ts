@@ -29,7 +29,7 @@ export class SlideShow extends LitElement {
     });
   }
 
-  nextImage(event?, index?){
+  nextImage(_event?, index?){
     clearTimeout(this.timer);
     let activeImageIndex = this.images.indexOf(this.querySelector('img[active]'));
     let newImage = activeImageIndex + 1;
