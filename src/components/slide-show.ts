@@ -5,8 +5,7 @@ import SlideShowStyles from '@/css/slide-show-styles.css?inline';
 export class SlideShow extends LitElement {
   static styles = [
     SlideShowStyles,
-    css`
-    `
+    css``
   ];
 
   firstUpdated(){

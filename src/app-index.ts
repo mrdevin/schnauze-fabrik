@@ -10,7 +10,7 @@ import AppIndexStyles from '/src/css/app-index-styles.css?inline';
 
 @customElement('app-index')
 export class AppIndex extends LitElement {
-    static styles = [
+    static  styles = [
       GlobalStyles,
       AppIndexStyles
     ]

@@ -15,8 +15,7 @@
 }
 
 ::slotted(img) {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    min-width: 100%;
     position: relative;
 }

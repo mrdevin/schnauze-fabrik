@@ -12,9 +12,16 @@ import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa';
 import postcssLit from 'rollup-plugin-postcss-lit';
 import postcssSimpleVars from 'postcss-simple-vars';
+import litcss from 'rollup-plugin-lit-css';
+import alias from '@rollup/plugin-alias';
 
 export default defineConfig({
     plugins: [
+        postcssLit({
+            include: [ '**/*.css\?*'],
+            exclude: ['**/*\?html-proxy*'],
+            importPackage: 'lit'
+        }),
         VitePWA({
             registerType: "autoUpdate",
             injectRegister: 'auto',
@@ -32,10 +39,7 @@ export default defineConfig({
                 enabled: true
             }
         }),
-        postcssLit({
-            include:"**/*.{css?inline, css,sss,pcss,styl,stylus,sass,scss,less}",
-            importPackage: 'lit'
-        }),
+
         buildStatistics({
             projectName: 'schnauze-fabrik',
         }),
@@ -68,6 +72,17 @@ export default defineConfig({
             analytics: {
                 id: 'G-WKRSREQMZ0',
             },
+        }),
+
+        // litcss({
+        //     include: ["**/*.css?inline"],
+        //     specifier: "lit-element"
+        // }),
+        alias({
+            entries: [{
+                find: 'lit-html/lib/shady-render.js',
+                replacement: 'node_modules/lit-html/lit-html.js'
+            }]
         })
     ],
     build: {

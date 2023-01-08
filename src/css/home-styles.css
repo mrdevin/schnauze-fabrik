@@ -240,7 +240,7 @@
     background-color: var(--shadow-color);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 14px;
     z-index: -1;
     transform: translateX(2.5px) skew(-10deg, 0deg)
 }
