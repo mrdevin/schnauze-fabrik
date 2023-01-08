@@ -67,14 +67,14 @@ export class PageHome extends LitElement {
         <div class="models">
           <div class="model-wrap">
             <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
-            <sf-model id="animationPointedEl" src="${animationPointed}" poster="${pinkPoster}" autoplay loading="eager">
+            <sf-model id="animationPointedEl" src="${animationPointed}" poster="${pinkPoster}" autoplay loading="lazy">
               <span hidden slot="progress-bar"></span>
             </sf-model>
           </div>
 
           <div class="model-wrap">
             <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
-            <sf-model id="animationFlatEl" src="${animationFlat}" poster="${bluePoster}" autoplay loading="eager">
+            <sf-model id="animationFlatEl" src="${animationFlat}" poster="${bluePoster}" autoplay loading="lazy">
               <span hidden slot="progress-bar"></span>
             </sf-model>
           </div>

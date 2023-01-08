@@ -2,82 +2,15 @@ import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators.js';
 import { ShopButton } from './shop-button';
 import GlobalStyles from '@/css/global-styles.css?inline';
-
+import SfHeaderStyles from '@/css/sf-header-styles.css?inline'
 // @ts-ignore
 @customElement('sf-header')
 export class SfModel extends LitElement {
   static styles = [
     GlobalStyles,
+    SfHeaderStyles,
     css`
-      :host {
-        --logo-space: calc(var(--sf-logo-size) + 10px);
-        display: grid;
-        align-content: center;
-        justify-content: start;
-        grid-template-rows: var(--logo-space) 50px;
-        grid-template-columns: 1fr;
-        --sf-logo-size: 111px;
-        --border-style: 4px solid var(--shadow-color);
-        border: var(--border-style);
-        position: relative;
-        color: var(--shadow-color);
-        position: sticky;
-        top: 0;
-        margin-bottom: 1em;
-        background-color: var(--primary-color);
-        box-shadow: 0 5px  3px 0px var(--primary-color);
-        z-index: 100;
-      }
 
-      :host > div{
-        display: grid;
-        grid-template-columns: var(--sf-logo-size) auto;
-      }
-
-      :host > div h2 {
-        place-self: center;
-        font-size: 32px;
-      }
-
-      @media(max-width: $mobileBreakpoint){
-        :host > div h2 {
-        place-self: center;
-        font-size: 32px;
-      }
-      }
-
-      svg {
-        width: var(--sf-logo-size);
-        height: var(--sf-logo-size);
-        margin-left: 10px;
-      }
-
-      nav {
-        width: 100%;
-        background: var(--highlight-color);
-        display: flex;
-        align-items: center;
-        border-top: 3px solid var(--shadow-color);
-        padding: 0 1em;
-      }
-
-      nav a {
-        padding-right: 1em;
-        margin-bottom: -5px;
-        font-family: 'JosefinSans', sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-      }
-
-      .shop-button {
-        place-self: center;
-        position: absolute;
-        right: -10px;
-      }
-
-      :host([animate-svg]) svg{
-        transition: all .4s linear;
-      }
     `
   ];
 

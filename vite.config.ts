@@ -77,7 +77,7 @@ export default defineConfig({
         rollupOptions: {
             output: {
             manualChunks: {
-                ModelViewer: ['@google/model-viewer/src/model-viewer.js'],
+                ModelViewer: ['@google/model-viewer/lib/model-viewer.js'],
             }}
         },
         manifest: true

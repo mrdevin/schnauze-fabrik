@@ -102,8 +102,7 @@ export class AppIndex extends LitElement {
         <!-- <div class="parent"> -->
             <sf-header></sf-header>
 
-            <main>
-                <div id="routerOutlet"></div>
+            <main id="routerOutlet">
             </main>
             <footer>
                 <nav>
