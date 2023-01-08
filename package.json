@@ -31,10 +31,13 @@
     "@vaadin/router": "^1.7.4",
     "lit-analyzer": "^1.2.1",
     "postcss": "^8.4.21",
+    "postcss-custom-media": "^9.0.1",
+    "postcss-simple-vars": "^7.0.1",
     "rollup-plugin-brotli": "^3.1.0",
     "rollup-plugin-build-statistics": "^0.0.19",
     "rollup-plugin-imagemin": "^0.4.1",
     "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-postcss-lit": "^2.0.0",
     "rollup-plugin-visualizer": "^5.9.0",
     "ts-lit-plugin": "^1.2.1",
     "typescript": "^4.9.4",
@@ -50,7 +53,7 @@
     "semi": true,
     "singleQuote": true,
     "quoteProps": "consistent",
-    "trailingComma": "es5",
+    "trailingComma": "es6",
     "endOfLine": "crlf",
     "bracketSpacing": true
   }

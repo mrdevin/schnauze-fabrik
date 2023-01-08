@@ -10,7 +10,8 @@ import brotli from "rollup-plugin-brotli";
 import buildStatistics from 'rollup-plugin-build-statistics';
 import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa';
-
+import postcssLit from 'rollup-plugin-postcss-lit';
+import postcssSimpleVars from 'postcss-simple-vars';
 
 export default defineConfig({
     plugins: [
@@ -30,6 +31,10 @@ export default defineConfig({
             devOptions: {
                 enabled: true
             }
+        }),
+        postcssLit({
+            include:"**/*.{css?inline, css,sss,pcss,styl,stylus,sass,scss,less}",
+            importPackage: 'lit'
         }),
         buildStatistics({
             projectName: 'schnauze-fabrik',
@@ -63,19 +68,27 @@ export default defineConfig({
             analytics: {
                 id: 'G-WKRSREQMZ0',
             },
-        }),
-
+        })
     ],
     build: {
         assetsDir: "code",
         sourcemap: true,
         cssCodeSplit: true,
         rollupOptions: {
+            output: {
             manualChunks: {
                 SfModel: ['src/components/sf-model.ts'],
-            }
+            }}
         },
         manifest: true
+    },
+    css: {
+        devSourcemap: true,
+        postcss: {
+            plugins: [
+                postcssSimpleVars({ variables: {mobileBreakpoint:  '640px'} })
+            ]
+        }
     },
     resolve: {
         alias: {

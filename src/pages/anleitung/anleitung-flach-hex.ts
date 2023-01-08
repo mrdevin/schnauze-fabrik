@@ -12,7 +12,7 @@ import Outline1Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-1.
 import Outline2Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-2.svg';
 
 
-import { AnleitungStyles } from '/src/css/anleitung-styles.js';
+import { AnleitungStyles } from '/src/css/anleitung-styles.css?inline';
 @customElement('anleitung-flach-hex')
 export class AnleitungFlachHex extends LitElement {
     static styles = [

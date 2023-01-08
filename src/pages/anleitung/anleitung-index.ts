@@ -2,7 +2,7 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import FlatSvg from '@/img/flat-icon.svg';
 import PointedSvg from '@/img/pointed-icon.svg';
-import { AnleitungStyles } from '/src/css/anleitung-styles.js';
+import { AnleitungStyles } from '/src/css/anleitung-styles.css?inline';
 
 @customElement('anleitung-index')
 export class AnleitungIndex extends LitElement {

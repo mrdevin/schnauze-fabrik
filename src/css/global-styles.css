@@ -22,6 +22,8 @@ html {
     --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
     --drop-shadow:  drop-shadow( 3px 4px 2px var(--drop-shadow-color));
     --clbl-size: 127px;
+    /* --mobile-breakpoint: 640px; */
+    @custom-media --mobile-breakpoint (max-width: 640px);
 }
 
 @font-face {

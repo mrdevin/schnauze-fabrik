@@ -1,13 +1,13 @@
-import {LitElement, html, css, unsafeCSS} from 'lit';
+import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators.js';
 import { ShopButton } from './shop-button';
-import GlobalStyles from '@/css/global-styles.css';
+import GlobalStyles from '@/css/global-styles.css?inline';
 
 // @ts-ignore
 @customElement('sf-header')
 export class SfModel extends LitElement {
   static styles = [
-    unsafeCSS(GlobalStyles),
+    GlobalStyles,
     css`
       :host {
         --logo-space: calc(var(--sf-logo-size) + 10px);
@@ -37,6 +37,13 @@ export class SfModel extends LitElement {
       :host > div h2 {
         place-self: center;
         font-size: 32px;
+      }
+
+      @media(max-width: $mobileBreakpoint){
+        :host > div h2 {
+        place-self: center;
+        font-size: 32px;
+      }
       }
 
       svg {

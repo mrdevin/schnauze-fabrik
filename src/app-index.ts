@@ -1,17 +1,17 @@
-import { LitElement, unsafeCSS,  html } from 'lit';
+import { LitElement,  html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { Router } from '@vaadin/router';
 import { registerSW } from 'virtual:pwa-register';
 
 import '/src/pages/page-home';
 import '/src/components/sf-header';
-import GlobalStyles from '@/css/global-styles.css';
-import { AppIndexStyles } from '/src/css/app-index-styles.js';
+import GlobalStyles from '@/css/global-styles.css?inline';
+import AppIndexStyles from '/src/css/app-index-styles.css?inline';
 
 @customElement('app-index')
 export class AppIndex extends LitElement {
     static styles = [
-      unsafeCSS(GlobalStyles),
+      GlobalStyles,
       AppIndexStyles
     ]
 
