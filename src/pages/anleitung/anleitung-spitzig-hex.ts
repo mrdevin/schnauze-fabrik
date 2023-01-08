@@ -15,7 +15,7 @@ import AnleitungStyles from '/src/css/anleitung-styles.css?inline';
 
 @customElement('anleitung-spitzig-hex')
 export class AnleitungSpitzigHex extends LitElement {
-  static styles = [
+  static readonly styles = [
     AnleitungStyles,
     css``
   ]

@@ -29,7 +29,7 @@ import '@/components/cl-bl';
 
 @customElement('page-home')
 export class PageHome extends LitElement {
-  static styles = [
+  static readonly styles = [
     GlobalStyles,
     HomeStyles,
     css`

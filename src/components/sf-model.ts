@@ -6,7 +6,7 @@ import  { ModelViewerElement }  from '@google/model-viewer/lib/model-viewer';
 @customElement('sf-model')
 export class SfModel extends ModelViewerElement {
 
-  static styles = [
+  static readonly styles = [
     css`
       :host {
         --poster-color: transparent;

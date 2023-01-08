@@ -2,11 +2,11 @@ import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators.js';
 import { ShopButton } from './shop-button';
 import GlobalStyles from '@/css/global-styles.css?inline';
-import SfHeaderStyles from '@/css/sf-header-styles.css?inline'
+import SfHeaderStyles from '@/css/sf-header-styles.css?inline';
 // @ts-ignore
 @customElement('sf-header')
 export class SfModel extends LitElement {
-  static styles = [
+  static readonly styles = [
     GlobalStyles,
     SfHeaderStyles,
     css`

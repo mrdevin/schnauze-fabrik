@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 
 @customElement('cl-bl')
 export class clBl extends LitElement {
-  static styles = [
+  static readonly styles = [
     css`
       :host {
         display: flex;

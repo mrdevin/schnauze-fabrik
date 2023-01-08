@@ -6,7 +6,7 @@ import AnleitungStyles from '/src/css/anleitung-styles.css?inline';
 
 @customElement('anleitung-index')
 export class AnleitungIndex extends LitElement {
-    static styles = [
+    static readonly styles = [
         AnleitungStyles,
         css``
     ]
