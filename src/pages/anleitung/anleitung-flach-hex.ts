@@ -10,9 +10,8 @@ import SmallFlapJpg from '@/img/anleitung-flach-hex/small-flap.jpeg';
 import Outline0Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-0.svg';
 import Outline1Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-1.svg';
 import Outline2Svg from '@/img/anleitung-flach-hex/deeper-base-hex-title-inst-2.svg';
+import AnleitungStyles from '/src/css/anleitung-styles.css?inline';
 
-
-import { AnleitungStyles } from '/src/css/anleitung-styles.css?inline';
 @customElement('anleitung-flach-hex')
 export class AnleitungFlachHex extends LitElement {
     static styles = [

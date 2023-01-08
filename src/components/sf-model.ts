@@ -1,6 +1,6 @@
 import { css } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { ModelViewerElement } from '@google/model-viewer/dist/model-viewer.js';
+import  { ModelViewerElement }  from '@google/model-viewer/src/model-viewer';
 
 // @ts-ignore
 @customElement('sf-model')

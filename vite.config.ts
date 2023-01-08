@@ -77,7 +77,7 @@ export default defineConfig({
         rollupOptions: {
             output: {
             manualChunks: {
-                SfModel: ['src/components/sf-model.ts'],
+                ModelViewer: ['@google/model-viewer/src/model-viewer.js'],
             }}
         },
         manifest: true
