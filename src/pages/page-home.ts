@@ -49,16 +49,16 @@ export class PageHome extends LitElement {
           </p>
         </div>
         <slide-show>
-          <img active loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
-          <img loading="lazy" width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide5}">
-          <img loading="lazy" width="580" height="435" alt="Heagonal Wandkunst" src="${slide1}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide6}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide8}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide9}">
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
+          <img active width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+          <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide5}">
+          <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide1}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide6}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide8}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide9}">
+          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
         </slide-show>
       </observed-section>
       <observed-section class="">
