@@ -49,7 +49,7 @@ export class PageHome extends LitElement {
           </p>
         </div>
         <slide-show>
-          <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+          <img active loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
           <img loading="lazy" width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
           <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
           <img loading="lazy" width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
@@ -84,7 +84,6 @@ export class PageHome extends LitElement {
             <div>Match</div>
           </div>
         </div>
-
       </observed-section>
       <observed-section class="colors-section">
         <div class="colors-title">
