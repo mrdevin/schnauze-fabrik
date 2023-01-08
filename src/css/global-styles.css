@@ -10,17 +10,17 @@ html {
     padding: 0;
 }
 
- html, :root {
+html, :root {
     --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgb(239,229,169, 1);
+    --highlight-color: rgb(239, 229, 169, 1);
     --shadow-main-value: 40;
     --shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), 1);
     --link-color: var(--shadow-color);
     --sf-logo-size: 111px;
     --accent-color: rgba(229, 11, 168, 1);
     --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
-    --drop-shadow:  drop-shadow( 3px 4px 2px var(--drop-shadow-color));
+    --drop-shadow: drop-shadow(3px 4px 2px var(--drop-shadow-color));
     --clbl-size: 127px;
     /* --mobile-breakpoint: 640px; */
     @custom-media --mobile-breakpoint (max-width: 640px);
@@ -31,26 +31,26 @@ html {
     src: url('/src/fonts/GT-Super-Display-Super.woff2') format('woff2'),
         url('/src/fonts/GT-Super-Display-Super.woff') format('woff'),
         url('/src/fonts/GT-Super-Display-Super.ttf') format('truetype');
-font-display: swap;
+    font-display: swap;
 }
 
 @font-face {
-font-family: 'JosefinSans';
+    font-family: 'JosefinSans';
     src: url('/src/fonts/JosefinSans-Regular.woff') format('woff'),
         url('/src/fonts/JosefinSans-Regular.ttf') format('truetype');
-font-display: swap;
-font-weight: normal;
+    font-display: swap;
+    font-weight: normal;
 }
 
 @font-face {
-font-family: 'JosefinSans';
+    font-family: 'JosefinSans';
     src: url('/src/fonts/JosefinSans-Bold.woff') format('woff'),
         url('/src/fonts/JosefinSans-Bold.ttf') format('truetype');
-font-display: swap;
-font-weight: bold;
+    font-display: swap;
+    font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6  {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'GT-Super-Display-Super', Rockwell, serif;
 }
 
@@ -71,7 +71,7 @@ p {
     display: none;
 }
 
-app-index > svg {
+app-index>svg {
     margin: 0 auto;
 }
 
@@ -82,4 +82,26 @@ observed-section {
     margin-bottom: 3em;
     justify-content: center;
     z-index: 1;
+}
+
+main a {
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    filter: var(--drop-shadow);
+    color: var(--shadow-color);
+    display: flex;
+    width: fit-content;
+}
+
+main a:before {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 5px);
+    height: 100%;
+    background-color: var(--highlight-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(2.5px) skew(-10deg, 0deg)
 }

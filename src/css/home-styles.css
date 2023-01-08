@@ -36,6 +36,7 @@
     margin-bottom: .2rem;
     position: relative;
     filter: var(--drop-shadow);
+    color: var(--primary-color);
 }
 
 .tape-title:before {
@@ -43,7 +44,7 @@
     display: inline-block;
     width: calc(100% - 5px);
     height: 100%;
-    background-color: var(--highlight-color);
+    background-color: var(--shadow-color);
     position: absolute;
     top: 0;
     left: 0;
