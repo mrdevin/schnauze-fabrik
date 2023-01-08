@@ -21,7 +21,7 @@ export class SlideShow extends LitElement {
     super.connectedCallback()
     requestAnimationFrame(()=>{
       this.images = this.shadowRoot.querySelector('slot').assignedElements({ flatten: true });
-      console.log("🚀 ~ file: slide-show.ts:21 ~ SlideShow ~ requestAnimationFrame ~ this.images", this.images)
+      // console.log("🚀 ~ file: slide-show.ts:21 ~ SlideShow ~ requestAnimationFrame ~ this.images", this.images)
       this.requestUpdate();
       this.timer = setTimeout(()=>{
         this.nextImage()
@@ -30,6 +30,7 @@ export class SlideShow extends LitElement {
   }
 
   nextImage(_event?, index?){
+    console.log("🚀 ~ file: slide-show.ts:33 ~ SlideShow ~ nextImage ~ index", index)
     clearTimeout(this.timer);
     let activeImageIndex = this.images.indexOf(this.querySelector('img[active]'));
     let newImage = activeImageIndex + 1;
@@ -37,7 +38,7 @@ export class SlideShow extends LitElement {
     if (newImage >= this.images.length){
       newImage = 0;
     }
-    if(index){
+    if(index !== undefined){
       newImage = index;
     }
     this.images[activeImageIndex].removeAttribute('active');
