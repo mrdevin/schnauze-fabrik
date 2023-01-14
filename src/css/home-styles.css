@@ -133,6 +133,11 @@
     min-height: 325px;
 }
 
+.model-wrap video {
+    border: 0;
+    width: 400px;
+}
+
 .mixMatch {
     display: grid;
     grid-template-rows: 1fr 38px 1fr;

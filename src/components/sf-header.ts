@@ -6,7 +6,7 @@ import SfHeaderStyles from '@/css/sf-header-styles.css?inline';
 // @ts-ignore
 @customElement('sf-header')
 export class SfModel extends LitElement {
-  static readonly styles = [
+  static styles = [
     GlobalStyles,
     SfHeaderStyles,
     css`

@@ -14,9 +14,13 @@ import postcssLit from 'rollup-plugin-postcss-lit';
 import postcssSimpleVars from 'postcss-simple-vars';
 import litcss from 'rollup-plugin-lit-css';
 import alias from '@rollup/plugin-alias';
+import wasm from "vite-plugin-wasm";
+import topLevelAwait from "vite-plugin-top-level-await";
 
 export default defineConfig({
     plugins: [
+        wasm(),
+        topLevelAwait(),
         postcssLit({
             include: [ '**/*.css\?*'],
             exclude: ['**/*\?html-proxy*'],
@@ -29,7 +33,7 @@ export default defineConfig({
             workbox: {
                 globDirectory: 'dist',
                 globPatterns: [
-                    '**/*.{html,js,css,png,webp,jpg,mp4,webm,glb}'
+                    '**/*.{html,js,css,png,webp,jpg,mp4,mov,webm,glb}'
                 ],
                 navigateFallbackDenylist: [/^\/*.pdf/],
                 skipWaiting: true,

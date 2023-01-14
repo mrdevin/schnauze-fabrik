@@ -14,6 +14,8 @@ declare module '*.glb';
 declare module '*.glb?url';
 declare module '*.mp4';
 declare module '*.mp4?url';
+declare module '*.mov';
+declare module '*.mov?url';
 declare module '*.webm';
 declare module '*.webm?url';
 declare module '*.vtt';

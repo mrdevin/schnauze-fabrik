@@ -1,8 +1,9 @@
 import { LitElement, html, css, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-import animationPointed from '../models/base-hex-title-pointed-animation.glb?url';
-import animationFlat from '../models/base-hex-title-animation.glb?url';
+import animatedFlat from '@/models/flat-3d.webm?url';
+import animatedPointed from '@/models/pointed-3d.webm?url';
+
 import pinkPoster from '../img/home/pink-poster.jpg?url';
 import bluePoster from '../img/home/blue-poster.jpg?url';
 import slide1 from '../img/home/slide1.jpg?url';
@@ -67,16 +68,12 @@ export class PageHome extends LitElement {
         <div class="models">
           <div class="model-wrap">
             <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
-            <sf-model id="animationPointedEl" src="${animationPointed}" poster="${pinkPoster}" autoplay loading="lazy">
-              <span hidden slot="progress-bar"></span>
-            </sf-model>
+            <video autoplay muted loop src="${animatedPointed}"></video>
           </div>
 
           <div class="model-wrap">
             <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
-            <sf-model id="animationFlatEl" src="${animationFlat}" poster="${bluePoster}" autoplay loading="lazy">
-              <span hidden slot="progress-bar"></span>
-            </sf-model>
+            <video autoplay muted loop src="${animatedFlat}"></video>
           </div>
           <div class="mixMatch">
             <div>Mix</div>
