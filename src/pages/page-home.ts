@@ -2,10 +2,10 @@ import { LitElement, html, css, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 import animatedFlat from '@/models/flat-3d.webm?url';
+import animatedFlatMp4 from '@/models/flat-3d.mp4?url';
 import animatedPointed from '@/models/pointed-3d.webm?url';
+import animatedPointedMp4 from '@/models/pointed-3d.mp4?url';
 
-import pinkPoster from '../img/home/pink-poster.jpg?url';
-import bluePoster from '../img/home/blue-poster.jpg?url';
 import slide1 from '../img/home/slide1.jpg?url';
 import slide2 from '../img/home/slide2.jpg?url';
 import slide3 from '../img/home/slide3.jpg?url';
@@ -68,12 +68,18 @@ export class PageHome extends LitElement {
         <div class="models">
           <div class="model-wrap">
             <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
-            <video autoplay muted loop src="${animatedPointed}"></video>
+            <video autoplay muted loop>
+              <source src="${animatedPointed}" type="video/webm">
+              <source src="${animatedPointedMp4}" type="video/mp4">
+            </video>
           </div>
 
           <div class="model-wrap">
             <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
-            <video autoplay muted loop src="${animatedFlat}"></video>
+            <video autoplay muted loop>
+              <source src="${animatedFlat}" type="video/webm">
+              <source src="${animatedFlatMp4}" type="video/mp4">
+            </video>
           </div>
           <div class="mixMatch">
             <div>Mix</div>
@@ -101,7 +107,7 @@ export class PageHome extends LitElement {
       <observed-section>
         <h2 class="tape-title">Einfache und Schnelle Montage</h2>
         <p> Teile herausnehmen • falten • kleben • auf die Wand hängen.</p>
-        <video id="assVid" controls loop autoplay muted>
+        <video id="assVid"   controls loop autoplay muted>
           <source src="${FlatAssemblyWebm}" type="video/webm">
           <source src="${FlatAssemblyMp4}" type="video/mp4">
         </video>
