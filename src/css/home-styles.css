@@ -128,14 +128,22 @@
 }
 
 .model-wrap {
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0;
     border: 7px solid var(--highlight-color);
     min-height: 325px;
+    overflow: hidden;
+    background-color: var(--shadow-color);
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .model-wrap video {
     border: 0;
-    width: 400px;
+    border-radius: 0;
+    display: flex;
+
+    /* width: 400px; */
 }
 
 .mixMatch {
@@ -181,14 +189,13 @@
 }
 
 .model-wrap header {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     background-color: var(--highlight-color);
     line-height: 40px;
     font-size: 24px;
     letter-spacing: 5%;
     text-align: center;
     padding: 25px;
+    display: flex;
 }
 
 .colors-section {

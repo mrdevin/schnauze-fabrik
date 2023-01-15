@@ -3,6 +3,7 @@
     --grid-col-one-height: 387px;
     grid-template-rows: var(--grid-col-one-height) 40px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 @media (max-width: $mobileBreakpoint) {
@@ -20,6 +21,7 @@
     width: 100%;
     grid-area: 1/1;
     box-sizing: border-box;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 /* slot {
