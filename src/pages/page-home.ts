@@ -25,7 +25,6 @@ import HomeStyles from '@/css/home-styles.css?inline';
 
 import '@/components/observed-section';
 import '@/components/slide-show';
-import '@/components/sf-model';
 import '@/components/cl-bl';
 
 @customElement('page-home')
