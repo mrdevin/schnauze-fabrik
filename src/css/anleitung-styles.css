@@ -165,3 +165,9 @@ div.instImg {
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
+#resources article a{
+    align-self: end;
+    justify-self: center;
+    /* width: min-content; */
+}
