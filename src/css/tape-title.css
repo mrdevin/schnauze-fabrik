@@ -1,0 +1,97 @@
+.split-tape-title span {
+    display: block;
+    color: var(--primary-color);
+    transform: rotate(-4deg);
+    font-size: 36px;
+    padding: .4rem .8rem;
+    display: block;
+    width: min-content;
+    margin-bottom: .2rem;
+    position: relative;
+    filter: var(--drop-shadow);
+}
+
+.split-tape-title span:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skew(-10deg, 0deg)
+}
+
+.tape-title {
+    text-align: center;
+    justify-self: center;
+    display: flex;
+    transform: rotate(-1deg);
+    font-size: 36px;
+    padding: .4rem .8rem;
+    display: block;
+    width: max-content;
+    margin-bottom: .2rem;
+    position: relative;
+    filter: var(--drop-shadow);
+    color: var(--primary-color);
+}
+
+.tape-title:before {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 5px);
+    height: 100%;
+    background-color: var(--shadow-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(2.5px) skew(-10deg, 0deg)
+}
+
+@media(max-width: $mobileBreakpoint) {
+    .tape-title:before {
+        width: calc(100% - 10px);
+    }
+}
+
+.tape-title+p {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+:host a {
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    filter: var(--drop-shadow);
+    color: var(--shadow-color);
+    display: flex;
+    position: relative;
+    width: fit-content;
+    transition: filter 0.3s ease-in-out;
+}
+
+:host a:hover {
+    filter: var(--drop-shadow-raised);
+}
+
+:host a:active {
+    filter: var(--drop-shadow-zero);
+}
+
+:host a:before {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 5px);
+    height: 100%;
+    background-color: var(--highlight-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(2.5px) skew(-10deg, 0deg)
+}

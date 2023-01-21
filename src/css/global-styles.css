@@ -21,6 +21,8 @@ html, :root {
     --accent-color: rgba(229, 11, 168, 1);
     --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
     --drop-shadow: drop-shadow(3px 4px 2px var(--drop-shadow-color));
+    --drop-shadow-zero: drop-shadow(0px 0px 2px var(--drop-shadow-color));
+    --drop-shadow-raised: drop-shadow(6px 7px 2px var(--drop-shadow-color));
     --clbl-size: 127px;
     /* --mobile-breakpoint: 640px; */
     @custom-media --mobile-breakpoint (max-width: 640px);
@@ -90,7 +92,15 @@ main a {
     filter: var(--drop-shadow);
     color: var(--shadow-color);
     display: flex;
+    position: relative;
     width: fit-content;
+}
+
+main a:hover {
+    filter: var(--drop-shadow-raise)
+}
+main a:active {
+    filter: var(--drop-shadow-zero)
 }
 
 main a:before {

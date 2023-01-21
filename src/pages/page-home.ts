@@ -22,6 +22,7 @@ import FlatAssemblyWebm from '/src/vids/flach-tile-assembly.webm';
 
 import GlobalStyles from '@/css/global-styles.css?inline';
 import HomeStyles from '@/css/home-styles.css?inline';
+import TapeTitle from '@/css/tape-title.css?inline';
 
 import '@/components/observed-section';
 import '@/components/slide-show';
@@ -31,6 +32,7 @@ import '@/components/cl-bl';
 export class PageHome extends LitElement {
   static readonly styles = [
     GlobalStyles,
+    TapeTitle,
     HomeStyles,
     css`
       .mixMatch {

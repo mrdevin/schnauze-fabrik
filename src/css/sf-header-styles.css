@@ -6,7 +6,7 @@
     grid-template-rows: var(--logo-space) 50px;
     grid-template-columns: 1fr;
     --sf-logo-size: 111px;
-    --border-style: 4px solid var(--shadow-color);
+    /* --border-style: 4px solid var(--shadow-color); */
     border: var(--border-style);
     position: relative;
     color: var(--shadow-color);
@@ -16,6 +16,7 @@
     background-color: var(--primary-color);
     box-shadow: 0 5px 3px 0px var(--primary-color);
     z-index: 100;
+    max-height: fit-content;
 }
 
 :host>div {
@@ -49,6 +50,7 @@ nav {
     display: flex;
     align-items: center;
     border-top: 3px solid var(--shadow-color);
+    border-bottom: 3px solid var(--shadow-color);
     padding: 0 1em;
 }
 

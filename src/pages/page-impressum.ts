@@ -25,7 +25,7 @@ export class PageImpressum extends LitElement {
         </p>
         <p>
           <strong>Kontakt:</strong> <br>
-          Telefon: 0160-xxxxxxxx<br>
+          Telefon: +493041707003<br>
           E-Mail: <a href='mailto:info@schnauze-fabrik.com'>info@schnauze-fabrik.com</a></br></p>
         <p>
           <strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
