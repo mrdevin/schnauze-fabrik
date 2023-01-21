@@ -97,7 +97,7 @@ main a {
 }
 
 main a:hover {
-    filter: var(--drop-shadow-raise)
+    filter: var(--drop-shadow-raised)
 }
 main a:active {
     filter: var(--drop-shadow-zero)

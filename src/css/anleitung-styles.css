@@ -53,7 +53,7 @@ div.instImg {
 
 }
 
-:host() {
+:host {
     display: block;
     flex-wrap: wrap;
 }
