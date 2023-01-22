@@ -1,11 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-interface Source {
-  src: string,
-  type: string
-}
-
 @customElement('lazy-video')
 export class LazyVideo extends LitElement {
   static readonly styles = [
