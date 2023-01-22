@@ -274,3 +274,8 @@ video {
     border-radius: 40px;
     border: 7px solid var(--highlight-color);
 }
+
+slide-show img {
+    object-fit: cover;
+    min-width: 100%;
+}

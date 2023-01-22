@@ -16,6 +16,18 @@ import slide7 from '../img/home/slide7.jpg?url';
 import slide8 from '../img/home/slide8.jpg?url';
 import slide9 from '../img/home/slide9.jpg?url';
 import slide10 from '../img/home/slide10.jpg?url';
+
+import slide1Webp from '../img/home/slide1.webp?url';
+import slide2Webp from '../img/home/slide2.webp?url';
+import slide3Webp from '../img/home/slide3.webp?url';
+import slide4Webp from '../img/home/slide4.webp?url';
+import slide5Webp from '../img/home/slide5.webp?url';
+import slide6Webp from '../img/home/slide6.webp?url';
+import slide7Webp from '../img/home/slide7.webp?url';
+import slide8Webp from '../img/home/slide8.webp?url';
+import slide9Webp from '../img/home/slide9.webp?url';
+import slide10Webp from '../img/home/slide10.webp?url';
+
 import star from '../img/home/star.svg?url';
 import FlatAssemblyMp4 from '/src/vids/flach-tile-assembly.mp4';
 import FlatAssemblyWebm from '/src/vids/flach-tile-assembly.webm';
@@ -52,16 +64,47 @@ export class PageHome extends LitElement {
           </p>
         </div>
         <slide-show>
-          <img active width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
-          <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide5}">
-          <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide1}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide6}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide8}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide9}">
-          <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
+
+          <picture active>
+            <source srcset="${slide7Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+          </picture>
+          <picture>
+            <source srcset="${slide2Webp}" type="image/webp">
+            <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
+          </picture>
+          <picture>
+            <source srcset="${slide3Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
+          </picture>
+          <picture>
+            <source srcset="${slide4Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
+          </picture>
+          <picture>
+            <source srcset="${slide5Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide5}">
+          </picture>
+          <picture>
+            <source srcset="${slide1Webp}" type="image/webp">
+            <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide1}">
+          </picture>
+          <picture>
+            <source srcset="${slide6Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide6}">
+          </picture>
+          <picture>
+            <source srcset="${slide8Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide8}">
+          </picture>
+          <picture>
+            <source srcset="${slide9Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide9}">
+          </picture>
+          <picture>
+            <source srcset="${slide10Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
+          </picture>
         </slide-show>
       </observed-section>
       <observed-section class="">
