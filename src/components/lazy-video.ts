@@ -16,7 +16,6 @@ export class LazyVideo extends LitElement {
 
 
   observeCallback(entries, observer){
-    console.log("🚀 ~ file: lazy-video.ts:33 ~ LazyVideo ~ observeCallback ~ entries, observer", entries, observer)
     if (!entries[0].isIntersecting){return};
     let sources = this.querySelectorAll('source');
     sources.forEach((source)=>{
@@ -24,19 +23,18 @@ export class LazyVideo extends LitElement {
     })
     let video: HTMLVideoElement = this.querySelector('video');
     video.load();
-    this.observer.unobserve(video);
-
+    observer.unobserve(this);
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this.observer = new IntersectionObserver(this.observeCallback.bind(this));
-    this.observer.observe(this);
+    let observer = new IntersectionObserver(this.observeCallback.bind(this));
+    observer.observe(this);
   }
 
   render() {
     return html`
-      <slot></slot>
+        <slot></slot>
     `;
   }
 }
