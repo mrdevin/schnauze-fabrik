@@ -71,7 +71,7 @@ export class PageHome extends LitElement {
           <div class="model-wrap">
             <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
             <lazy-video >
-              <video autoplay muted loop>
+              <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedPointed}" type="video/webm">
                 <source lazy-src="${animatedPointedMp4}" type="video/mp4">
               </video>
@@ -81,7 +81,7 @@ export class PageHome extends LitElement {
           <div class="model-wrap">
             <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
             <lazy-video >
-              <video autoplay muted loop>
+              <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedFlat}" type="video/webm">
                 <source lazy-src="${animatedFlatMp4}" type="video/mp4">
               </video>
@@ -114,7 +114,7 @@ export class PageHome extends LitElement {
         <h2 class="tape-title">Einfache und Schnelle Montage</h2>
         <p> Teile herausnehmen • falten • kleben • auf die Wand hängen.</p>
         <lazy-video >
-          <video id="assVid" controls loop autoplay muted>
+          <video id="assVid" playsinline controls loop autoplay muted>
             <source lazy-src="${FlatAssemblyWebm}" type="video/webm">
             <source lazy-src="${FlatAssemblyMp4}" type="video/mp4">
           </video>
