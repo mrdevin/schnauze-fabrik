@@ -27,12 +27,12 @@ export class AnleitungDesignIdeen extends LitElement {
       <p>Here are a few examples of some patterns that you can create</p>
       <picture class="instImg" height="400" width="300">
         <source type="image/webp" srcset="${FlowerWebp}">
-        <img loading="lazy" src="${FlowerJpeg}">
+        <img alt="Flat a pointed paper tiles arranged on the wall in the shape of a flower" src="${FlowerJpeg}">
       </picture>
 
       <picture class="instImg" height="300" width="2122">
         <source type="image/webp" srcset="${SlantedGridWebp}">
-        <img loading="lazy" src="${SlantedGridJpeg}">
+        <img alt="POinted Paper tiles arranged on the wall with rainbow colors" src="${SlantedGridJpeg}">
       </picture>
       <p>Here are a few examples of some patterns that you can create.
       Many more patterns can be found in the Pattern Maker App.</p>

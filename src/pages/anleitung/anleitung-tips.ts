@@ -23,7 +23,7 @@ export class AnleitungTips extends LitElement {
       </p>
       <picture height="300" width="225">
         <source type="image/webp" srcset="${GlueWebp}">
-        <img loading="lazy" src="${GlueJpeg}">
+        <img alt="Flat paper title stacked on a table with a small bottle of glue sitting in front." src="${GlueJpeg}">
       </picture>
 
       <h2>Kleben</h2>
@@ -39,7 +39,7 @@ export class AnleitungTips extends LitElement {
       <p>One disadvantage of glue is that it will get on your fingers and potentially transfer to your tiles. Keep a piece of paper towel or tissue on hand to wipe up and spills or squeeze out from the seems. Using a tissue or paper towel wipe up any excess glue, wiping it towards the seam. Wiping away from the seam may cause the glue to spread across the surface of the Tile and cause discoloration. Keep you fingers clean, the mixture of dirt and glue on your fingers will easily transfer to the Tile.</p>
       <picture height="300" width="225">
         <source type="image/webp" srcset="${DirtyFingerWebp}">
-        <img loading="lazy" src="${DirtyFingerJpeg}">
+        <img loading="lazy"  alt="Finger tip that has dried glue with dirt on it." src="${DirtyFingerJpeg}">
       </picture>
 
       <h2>Precision</h2>
@@ -59,13 +59,13 @@ export class AnleitungTips extends LitElement {
 
       <picture height="300" width="400">
         <source type="image/webp" srcset="${LargeTabTwoWebp}">
-        <img loading="lazy" src="${LargeTabTwoJpeg}">
+        <img loading="lazy" alt="Close-up large tab of and unassembled Paper Tile " src="${LargeTabTwoJpeg}">
       </picture>
 
 
       <picture width="300" height="225">
         <source type="image/webp" srcset="${TabFingerWebp}">
-        <img loading="lazy" src="${TabFingerJpeg}">
+        <img loading="lazy" alt="Close-up large tab of and unassembled Paper Tile with finger pressing it down" src="${TabFingerJpeg}">
       </picture>
 
     `

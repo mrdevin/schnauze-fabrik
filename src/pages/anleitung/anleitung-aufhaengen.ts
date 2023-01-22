@@ -33,7 +33,7 @@ export class AnleitungAufhaengen extends LitElement {
       </p>
       <picture >
         <source type="image/webp" srcset="${NailThreeWebp}">
-        <img height="253" width="400" loading="lazy" src="${NailThreeJpg}">
+        <img height="253" width="400" alt="Close-up of a small nail sitting on a self-healing cutting matt" src="${NailThreeJpg}">
       </picture>
 
       <h3>Preparing the hanging template</h3>
@@ -41,27 +41,27 @@ export class AnleitungAufhaengen extends LitElement {
       </p>
       <picture >
         <source type="image/webp" srcset="${TemplateOneWebp}">
-        <img height="400" width="350" loading="lazy" src="${TemplateOneJpg}">
+        <img height="400" width="350" alt="Using a Ruler and Craft Knife to cut the hanging template to the desired whape." loading="lazy" src="${TemplateOneJpg}">
       </picture>
 
       <h3>Placing the first Tile</h3>
       <p>Use the template to determine the position of the first Tile in your design. Hold the template in place or loosely affix it to the wall with a small bit of Masking tape. If your tape is too sticky it may harm your walls, but you can reduces its tackiness by placing the piece of tape on you pant leg and removing it a few times.</p>
       <picture >
         <source type="image/webp" srcset="${TemplateTwoWebp}">
-        <img height="400" width="300" loading="lazy" src="${TemplateTwoJpg}">
+        <img height="400" width="300" alt="Hanging Template being held on the wall next to previously hung Paper Tiles" loading="lazy" src="${TemplateTwoJpg}">
       </picture>
       <p>
       Use a hammer and nail to mark the uppermost point of the star shape in the middle of the tile.</p>
       <picture >
         <source type="image/webp" srcset="${NailOneWebp}">
-        <img height="400" width="300" loading="lazy" src="${NailOneJpg}">
+        <img height="400" width="300" alt="Using the hanging template, Hammer and Nail, to mark a nail position on the wall" loading="lazy" src="${NailOneJpg}">
       </picture>
       <p>
       Remove the template from the wall and hammer the nail into the marked position. It is best to drive the nail in so that is angled upwards, this will help to hold your tile close to the wall. Leave about 1/2 to 1 centimeter of the nail exposed. Hang the completed Tile on the nail using the star-shaped cutout on the back of the Tile.
       </p>
       <picture >
         <source type="image/webp" srcset="${NailTwoWebp}">
-        <img height="400" width="312" loading="lazy" src="${NailTwoJpg}">
+        <img height="400" width="312" alt="Close up of nail 1/2 in the Wall at an upward sloped angle" loading="lazy" src="${NailTwoJpg}">
       </picture>
 
 
@@ -71,7 +71,7 @@ export class AnleitungAufhaengen extends LitElement {
       </p>
       <picture >
         <source type="image/webp" srcset="${TemplateTwoWebp}">
-        <img height="400" width="300" loading="lazy" src="${TemplateTwoJpg}">
+        <img height="400" width="300" loading="lazy" alt="Hanging Template being held on the wall next to previously hung Paper Tiles" src="${TemplateTwoJpg}">
       </picture>
 
       <p>
@@ -85,13 +85,13 @@ export class AnleitungAufhaengen extends LitElement {
       nail is pointed. This should minimize the size of the hole.</p>
       <picture >
         <source type="image/webp" srcset="${NailPullWebp}">
-        <img height="400" width="300" loading="lazy" src="${NailPullJpg}">
+        <img height="400" width="300" loading="lazy" alt="Pliers gripping the end of a Nail that is protruding from the wall " src="${NailPullJpg}">
       </picture>
 
       <p> Place a small bit of Ready Putty on your fingertip and push it into the hole. Wipe up and excess and allow to dry. </p>
       <picture >
         <source type="image/webp" srcset="${PuttyTwoWebp}">
-        <img height="301" width="400" loading="lazy" src="${PuttyTwoJpg}">
+        <img height="301" width="400" alt="Composite image: Left: showing Wall putty being squeezed out of tube and a small portion put on a finger tip. Right: Finger tip with a small portion of wall putty hovering over small nail hole in the wall " loading="lazy" src="${PuttyTwoJpg}">
       </picture>
       <p>The hole should be completely invisible once it has dried. If your walls are not white you will need to apply a small amount of paint on top of the dried plaster.</p>
     `

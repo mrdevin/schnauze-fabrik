@@ -28,7 +28,7 @@ export class AnleitungIndex extends LitElement {
                 <div>
                     <h3><em>Flache Fliese</em> - Montageanleitung</h3>
                     <picture class="icon">
-                        <img height="253" width="400" loading="lazy" src="${FlatSvg}">
+                        <img height="253" width="400" alt="Outline of Flat Paper tile" src="${FlatSvg}">
                     </picture>
                     <a href="/anleitung/flach-hex">
                         zum Anleitung mit video.
@@ -37,7 +37,7 @@ export class AnleitungIndex extends LitElement {
                 <div>
                     <h3><em>Spitzige Fliese</em> - Montageanleitung</h3>
                     <picture class="icon">
-                        <img height="253" width="400" loading="lazy" src="${PointedSvg}">
+                        <img height="253" width="400" alt="Outline of Pointed Paper tile" src="${PointedSvg}">
                     </picture>
                     <a href="/anleitung/spitzig-hex">
                         zum Anleitung mit video.
