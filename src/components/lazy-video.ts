@@ -23,6 +23,7 @@ export class LazyVideo extends LitElement {
     })
     let video: HTMLVideoElement = this.querySelector('video');
     video.load();
+    video.play();
     observer.unobserve(this);
   }
 
