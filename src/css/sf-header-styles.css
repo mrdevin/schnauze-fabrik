@@ -29,6 +29,7 @@
 :host>div h2 {
     place-self: center;
     font-size: 32px;
+    filter: drop-shadow(rgba(40, 40, 40, 0.2) 2px 4px 1px);
 }
 
 @media(max-width: $mobileBreakpoint) {
