@@ -67,7 +67,7 @@ export class PageHome extends LitElement {
 
           <picture active>
             <source srcset="${slide7Webp}" type="image/webp">
-            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
           </picture>
           <picture>
             <source srcset="${slide2Webp}" type="image/webp">
