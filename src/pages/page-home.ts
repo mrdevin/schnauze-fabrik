@@ -67,43 +67,43 @@ export class PageHome extends LitElement {
 
           <picture active>
             <source srcset="${slide7Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide7}">
           </picture>
           <picture>
             <source srcset="${slide2Webp}" type="image/webp">
-            <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide2}">
+            <img width="580" loading="lazy" height="435" alt="Heagonal Wandkunst" src="${slide2}">
           </picture>
           <picture>
             <source srcset="${slide3Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide3}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide3}">
           </picture>
           <picture>
             <source srcset="${slide4Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide4}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide4}">
           </picture>
           <picture>
             <source srcset="${slide5Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide5}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide5}">
           </picture>
           <picture>
             <source srcset="${slide1Webp}" type="image/webp">
-            <img width="580" height="435" alt="Heagonal Wandkunst" src="${slide1}">
+            <img width="580" loading="lazy" height="435" alt="Heagonal Wandkunst" src="${slide1}">
           </picture>
           <picture>
             <source srcset="${slide6Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide6}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide6}">
           </picture>
           <picture>
             <source srcset="${slide8Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide8}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide8}">
           </picture>
           <picture>
             <source srcset="${slide9Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide9}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide9}">
           </picture>
           <picture>
             <source srcset="${slide10Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide10}">
           </picture>
         </slide-show>
       </observed-section>
