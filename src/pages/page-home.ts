@@ -27,6 +27,7 @@ import TapeTitle from '@/css/tape-title.css?inline';
 import '@/components/observed-section';
 import '@/components/slide-show';
 import '@/components/cl-bl';
+import '@/components/lazy-video';
 
 @customElement('page-home')
 export class PageHome extends LitElement {
@@ -69,18 +70,22 @@ export class PageHome extends LitElement {
         <div class="models">
           <div class="model-wrap">
             <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
-            <video autoplay muted loop>
-              <source src="${animatedPointed}" type="video/webm">
-              <source src="${animatedPointedMp4}" type="video/mp4">
-            </video>
+            <lazy-video >
+              <video autoplay muted loop>
+                <source lazy-src="${animatedPointed}" type="video/webm">
+                <source lazy-src="${animatedPointedMp4}" type="video/mp4">
+              </video>
+            </lazy-video>
           </div>
 
           <div class="model-wrap">
             <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
-            <video autoplay muted loop>
-              <source src="${animatedFlat}" type="video/webm">
-              <source src="${animatedFlatMp4}" type="video/mp4">
-            </video>
+            <lazy-video >
+              <video autoplay muted loop>
+                <source lazy-src="${animatedFlat}" type="video/webm">
+                <source lazy-src="${animatedFlatMp4}" type="video/mp4">
+              </video>
+            </lazy-video>
           </div>
           <div class="mixMatch">
             <div>Mix</div>
@@ -108,10 +113,12 @@ export class PageHome extends LitElement {
       <observed-section>
         <h2 class="tape-title">Einfache und Schnelle Montage</h2>
         <p> Teile herausnehmen • falten • kleben • auf die Wand hängen.</p>
-        <video id="assVid"   controls loop autoplay muted>
-          <source src="${FlatAssemblyWebm}" type="video/webm">
-          <source src="${FlatAssemblyMp4}" type="video/mp4">
-        </video>
+        <lazy-video >
+          <video id="assVid" controls loop autoplay muted>
+            <source lazy-src="${FlatAssemblyWebm}" type="video/webm">
+            <source lazy-src="${FlatAssemblyMp4}" type="video/mp4">
+          </video>
+        </lazy-video>
       </observed-section>
 
 
