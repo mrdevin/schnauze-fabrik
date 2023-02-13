@@ -102,7 +102,11 @@ export class clBl extends LitElement {
 
   render() {
     return html`
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1" x="0" y="0" style="enable-background:new 0 0 207.4 210.2" version="1.1" viewBox="0 0 207.4 210.2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        viewBox="0 0 207.4 210.2">
         <style>
           ${this.svgStyles}
 

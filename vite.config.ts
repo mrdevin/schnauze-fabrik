@@ -12,7 +12,6 @@ import { visualizer } from "rollup-plugin-visualizer";
 import { VitePWA } from 'vite-plugin-pwa';
 import postcssLit from 'rollup-plugin-postcss-lit';
 import postcssSimpleVars from 'postcss-simple-vars';
-import litcss from 'rollup-plugin-lit-css';
 import alias from '@rollup/plugin-alias';
 import wasm from "vite-plugin-wasm";
 import topLevelAwait from "vite-plugin-top-level-await";
@@ -78,10 +77,6 @@ export default defineConfig({
             },
         }),
 
-        // litcss({
-        //     include: ["**/*.css?inline"],
-        //     specifier: "lit-element"
-        // }),
         alias({
             entries: [{
                 find: 'lit-html/lib/shady-render.js',
@@ -93,12 +88,6 @@ export default defineConfig({
         assetsDir: "code",
         sourcemap: true,
         cssCodeSplit: true,
-        rollupOptions: {
-            output: {
-            manualChunks: {
-                ModelViewer: ['@google/model-viewer/lib/model-viewer.js'],
-            }}
-        },
         manifest: true
     },
     css: {
