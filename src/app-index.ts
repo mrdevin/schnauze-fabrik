@@ -90,6 +90,12 @@ export class AppIndex extends LitElement {
                       action: async () => {
                         await import('./pages/page-about.js');
                       }
+                  },{
+                      path: '(.*)',
+                      component: 'page-not-found',
+                    action: async () => {
+                      await import('./pages/page-not-found.js');
+                    }
                   },
                 ],
             } as any,
@@ -107,6 +113,7 @@ export class AppIndex extends LitElement {
             <footer>
                 <nav>
                   <a href="/impressum/">Impressum</a>
+                  <a href="/about/">Über uns</a>
                   <span>${new Date().getFullYear() } <span class="copyrightSymbol">©</span> Schnauze Fabrik</span>
                 </nav>
 

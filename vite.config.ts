@@ -62,7 +62,7 @@ export default defineConfig({
         vitePluginFaviconsInject('./src/img/logo.svg',
             {
                 appName: 'Schnauze Fabrik',
-                appDescription: 'Design your SPACE with DIY 3D paper Skulpture',
+                appDescription: 'Design your SPACE with DIY 3D paper Skulpture. Some assembly required!',
                 developerName: 'MrDevin',
                 developerURL: null,
                 lang: 'de',
