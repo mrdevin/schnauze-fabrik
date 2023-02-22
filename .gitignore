@@ -7,3 +7,4 @@ stats.*
 *.mp4
 *.webm
 dev-dist
+.DS_Store
