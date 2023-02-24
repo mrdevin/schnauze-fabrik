@@ -86,7 +86,7 @@ observed-section {
     z-index: 1;
 }
 
-main a {
+main a:not([type="button"]) {
     text-align: center;
     padding: 0.4rem 0.8rem;
     filter: var(--drop-shadow);
@@ -103,7 +103,7 @@ main a:active {
     filter: var(--drop-shadow-zero)
 }
 
-main a:before {
+main a:not([type="button"]):before {
     content: '';
     display: inline-block;
     width: calc(100% - 5px);

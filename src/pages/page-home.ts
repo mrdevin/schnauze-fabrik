@@ -5,6 +5,7 @@ import animatedFlat from '@/models/flat-3d.webm?url';
 import animatedFlatMp4 from '@/models/flat-3d.mp4?url';
 import animatedPointed from '@/models/pointed-3d.webm?url';
 import animatedPointedMp4 from '@/models/pointed-3d.mp4?url';
+import { ShopButton } from '@/components/shop-button.ts';
 
 import slide1 from '../img/home/slide1.jpg?url';
 import slide2 from '../img/home/slide2.jpg?url';
@@ -60,7 +61,7 @@ export class PageHome extends LitElement {
         <div>
           <h1 class="split-tape-title"><span>Hexagonal</span><span>Wandkunst</span></h1>
           <p>
-            Ihre Wand aufpeppen, mit ihren eigenen hexagonalen Designs.
+            Bringen Sie Ihre Wand zum Leben mit unseren Schnauze Fabrik DIY-Kits!
           </p>
         </div>
         <slide-show>
@@ -108,11 +109,11 @@ export class PageHome extends LitElement {
         </slide-show>
       </observed-section>
       <observed-section class="">
-        <h2 class="tape-title">Wollen sie spitzige Fliesen oder flache Fliesen?</h2>
-        <p>Beiden verfügbar für den gleichen Preis!</p>
+        <h2 class="tape-title">Wählen Sie zwischen spitzigen und flachen Fliesen</h2>
+        <p>zum gleichen Preis!</p>
         <div class="models">
           <div class="model-wrap">
-            <header>Spitzig Fliesen bringt mehr Dimension auf ihre Wand.</header>
+            <header>Spitzige Fliesen sorgen für mehr Dimension an Ihrer Wand.</header>
             <lazy-video >
               <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedPointed}" type="video/webm">
@@ -122,7 +123,7 @@ export class PageHome extends LitElement {
           </div>
 
           <div class="model-wrap">
-            <header>Flach Fliesen sind die perfekte Basis für ihre Basteln Projekte.</header>
+            <header>Flache Fliesen sind die perfekte Basis für Ihre Bastelprojekte.</header>
             <lazy-video >
               <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedFlat}" type="video/webm">
@@ -162,6 +163,14 @@ export class PageHome extends LitElement {
             <source lazy-src="${FlatAssemblyMp4}" type="video/mp4">
           </video>
         </lazy-video>
+      </observed-section>
+      <observed-section>
+        <p><strong>Und das Beste:</strong>
+          Mit unserer kostenlosen <a target="_blank" rel="noopener" href="http://schnauze-fabrik.app">Pattern-Designer-App</a> können Sie ganz einfach Ihr individuelles Muster gestalten!</p>
+
+        <p>Erwecken Sie Ihre Wand zum Leben und bestellen Sie jetzt Ihr Schnauze Fabrik Wandfliesen-Kit!
+        </p>
+        ${ShopButton({ primary: true, size: 'large' })}
       </observed-section>
 
 

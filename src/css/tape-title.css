@@ -64,7 +64,7 @@
     font-size: 24px;
 }
 
-:host a {
+:host a:not([type=button]) {
     text-align: center;
     padding: 0.4rem 0.8rem;
     filter: var(--drop-shadow);
@@ -83,7 +83,7 @@
     filter: var(--drop-shadow-zero);
 }
 
-:host a:before {
+:host a:not([type=button]):before {
     content: '';
     display: inline-block;
     width: calc(100% - 5px);
