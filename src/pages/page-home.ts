@@ -165,8 +165,6 @@ export class PageHome extends LitElement {
         </lazy-video>
       </observed-section>
       <observed-section>
-        <p><strong>Und das Beste:</strong>
-          Mit unserer kostenlosen <a target="_blank" rel="noopener" href="http://schnauze-fabrik.app">Pattern-Designer-App</a> können Sie ganz einfach Ihr individuelles Muster gestalten!</p>
 
         <p>Erwecken Sie Ihre Wand zum Leben und bestellen Sie jetzt Ihr Schnauze Fabrik Wandfliesen-Kit!
         </p>
