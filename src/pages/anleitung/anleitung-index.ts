@@ -21,42 +21,42 @@ export class AnleitungIndex extends LitElement {
                 <h1 class="tape-title">Anleitung</h1>
 
                 <h2>Einfache Montage, Teile herausnehmen, falten,
-                kleben und auf die Wand hängen.</h2>
+                kleben und an die Wand hängen.</h2>
 
             </header>
             <div class="split-2">
                 <div>
-                    <h3><em>Flache Fliese</em> - Montageanleitung</h3>
+                    <h3><em>Flach Fliese</em> - Montageanleitung</h3>
                     <picture class="icon">
                         <img height="253" width="400" alt="Outline of Flat Paper tile" src="${FlatSvg}">
                     </picture>
                     <a href="/anleitung/flach-hex">
-                        zum Anleitung mit video.
+                        Zur Anleitung mit Video.
                     </a>
                 </div>
                 <div>
-                    <h3><em>Spitzige Fliese</em> - Montageanleitung</h3>
+                    <h3><em>Spitze Fliese</em> - Montageanleitung</h3>
                     <picture class="icon">
                         <img height="253" width="400" alt="Outline of Pointed Paper tile" src="${PointedSvg}">
                     </picture>
-                    <a href="/anleitung/spitzig-hex">
-                        zum Anleitung mit video.
+                    <a href="/anleitung/spitze-hex">
+                        Zur Anleitung mit Video.
                     </a>
                 </div>
             </div>
             <h3 class="tape-title">Mehre Ressourcen</h3>
             <section id="resources">
                 <article>
-                    <p>Instructions for hanging your tiles in text and video form. You will also find links to download additional hanging templates.</p>
+                    <p>Anleitung zum Aufhängen Ihrer Fliesen in Text- und Videoform. Sie finden auch Links zum Herunterladen zusätzlicher Aufhängevorlagen.</p>
                     <a href="/anleitung/aufhaengen">Aufhängen</a>
                 </article>
                 <article>
-                    <p>A popular uses of the flache Fliese is as picture frames. For this purpose I have created a cropping template and instructions.</p>
+                    <p>Eine beliebte Verwendung der flache Fliesen ist als Bilderrahmen. Dazu habe ich eine Zuschneidevorlage und eine Anleitung erstellt.</p>
                     <a download rel="noopener noreferrer" target="_blank" href="/photo-cropping-template.pdf">Photo Cropping Template</a>
 
                 </article>
                 <article>
-                    <p>Some terms that I use may be new to you, here you can find a list of definitions for the jargon that we use.</p>
+                    <p>Einige Begriffe, die ich verwende, sind möglicherweise neu für Sie. Hier finden Sie eine Liste mit Definitionen für den von uns verwendeten Jargon.</p>
                     <a href="/anleitung/glossar">Glossar</a>
                 </article>
             </section>

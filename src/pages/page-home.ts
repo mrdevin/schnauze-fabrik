@@ -5,7 +5,7 @@ import animatedFlat from '@/models/flat-3d.webm?url';
 import animatedFlatMp4 from '@/models/flat-3d.mp4?url';
 import animatedPointed from '@/models/pointed-3d.webm?url';
 import animatedPointedMp4 from '@/models/pointed-3d.mp4?url';
-import { ShopButton } from '@/components/shop-button.ts';
+import { ShopButton } from '../components/shop-button';
 
 import slide1 from '../img/home/slide1.jpg?url';
 import slide2 from '../img/home/slide2.jpg?url';
@@ -61,26 +61,30 @@ export class PageHome extends LitElement {
         <div>
           <h1 class="split-tape-title"><span>Hexagonal</span><span>Wandkunst</span></h1>
           <p>
-            Bringen Sie Ihre Wand zum Leben mit unseren Schnauze Fabrik DIY-Kits!
+            Peppen Sie Ihre Wand auf - mit Ihren eigenen hexagonalen Designs!
           </p>
         </div>
         <slide-show>
 
           <picture active>
-            <source srcset="${slide7Webp}" type="image/webp">
-            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+            <source srcset="${slide10Webp}" type="image/webp">
+            <img width="580" height="387" alt="Heagonal Wandkunst" src="${slide10}">
           </picture>
           <picture>
             <source srcset="${slide2Webp}" type="image/webp">
             <img width="580" loading="lazy" height="435" alt="Heagonal Wandkunst" src="${slide2}">
           </picture>
+           <picture>
+            <source srcset="${slide4Webp}" type="image/webp">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide4}">
+          </picture>
+          <picture>
+            <source srcset="${slide7Webp}" type="image/webp">
+            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide7}">
+          </picture>
           <picture>
             <source srcset="${slide3Webp}" type="image/webp">
             <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide3}">
-          </picture>
-          <picture>
-            <source srcset="${slide4Webp}" type="image/webp">
-            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide4}">
           </picture>
           <picture>
             <source srcset="${slide5Webp}" type="image/webp">
@@ -102,18 +106,15 @@ export class PageHome extends LitElement {
             <source srcset="${slide9Webp}" type="image/webp">
             <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide9}">
           </picture>
-          <picture>
-            <source srcset="${slide10Webp}" type="image/webp">
-            <img width="580" loading="lazy" height="387" alt="Heagonal Wandkunst" src="${slide10}">
-          </picture>
+
         </slide-show>
       </observed-section>
       <observed-section class="">
-        <h2 class="tape-title">Wählen Sie zwischen spitzigen und flachen Fliesen</h2>
-        <p>zum gleichen Preis!</p>
+        <h2 class="tape-title">Wollen Sie 3D-Papierfliesen mit Spitze oder flach?</h2>
+        <p>Beide Modelle sind verfügbar für denselben Preis!</p>
         <div class="models">
           <div class="model-wrap">
-            <header>Spitzige Fliesen sorgen für mehr Dimension an Ihrer Wand.</header>
+            <header>Fliesen mit Spitze bringen noch mehr Dimension in Ihr Zimmer.</header>
             <lazy-video >
               <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedPointed}" type="video/webm">
@@ -123,7 +124,7 @@ export class PageHome extends LitElement {
           </div>
 
           <div class="model-wrap">
-            <header>Flache Fliesen sind die perfekte Basis für Ihre Bastelprojekte.</header>
+            <header>Flache Fliesen sind die perfekte Basis für Ihre Bastel-Projekte.</header>
             <lazy-video >
               <video playsinline autoplay muted loop>
                 <source lazy-src="${animatedFlat}" type="video/webm">
@@ -140,9 +141,9 @@ export class PageHome extends LitElement {
       </observed-section>
       <observed-section class="colors-section">
         <div class="colors-title">
-          <h2>Wahlen von</h2>
+          <h2>Wählen Sie aus</h2>
           <span class="number">7</span>
-          <h2>prächtig Farben.</h2>
+          <h2> prächtigen Farben aus!</h2>
         </div>
         <div class="colors">
           <cl-bl color="rgb(26, 63, 169)">Starling Blue</cl-bl>
@@ -155,8 +156,8 @@ export class PageHome extends LitElement {
         </div>
       </observed-section>
       <observed-section>
-        <h2 class="tape-title">Einfache und Schnelle Montage</h2>
-        <p> Teile herausnehmen • falten • kleben • auf die Wand hängen.</p>
+        <h2 class="tape-title">Einfache und schnelle Montage</h2>
+        <p>Teile herausnehmen • falten • kleben • an die Wand hängen.</p>
         <lazy-video >
           <video id="assVid" playsinline controls loop autoplay muted>
             <source lazy-src="${FlatAssemblyWebm}" type="video/webm">
@@ -166,8 +167,6 @@ export class PageHome extends LitElement {
       </observed-section>
       <observed-section>
 
-        <p>Erwecken Sie Ihre Wand zum Leben und bestellen Sie jetzt Ihr Schnauze Fabrik Wandfliesen-Kit!
-        </p>
         ${ShopButton({ primary: true, size: 'large' })}
       </observed-section>
 

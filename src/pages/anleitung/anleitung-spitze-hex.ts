@@ -27,7 +27,7 @@ export class AnleitungSpitzigHex extends LitElement {
         <style>
           ${AnleitungStyles}
         </style>
-        <h1>Anleitung für Spitzig Fliesen</h1>
+        <h1>Anleitung für Spitze Fliesen</h1>
 
         <video id="assVid" controls loop autoplay muted>
           <source src="${SpitzigVidWebm}" type="video/webm">

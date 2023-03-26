@@ -63,6 +63,57 @@ nav a {
     font-weight: normal;
 }
 
+nav button {
+    background-color: transparent;
+    border: none;
+    display: none;
+    height: 10px;
+    align-items: center;
+}
+
+nav .mobileMenu, nav .mobileMenu[hidden] {
+    display: contents;
+}
+
+@media(max-width: $mobileBreakpoint) {
+    nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    nav .mobileMenu[hidden] {
+        display: none;
+    }
+
+    nav .mobileMenu {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 300px;
+        position: absolute;
+        background: var(--highlight-color);
+        top: 39px;
+        border: 3px solid var(--shadow-color);
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        left: 74px;
+    }
+
+    nav .mobileMenu a {
+        width: 100%
+    }
+
+    nav button {
+        display: flex;
+    }
+}
+
+nav button svg {
+    height: 30px;
+}
+
+
 .shop-button {
     place-self: center;
     position: absolute;

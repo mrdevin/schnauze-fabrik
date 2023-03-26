@@ -48,10 +48,10 @@ export class AppIndex extends LitElement {
                         await import('./pages/anleitung/anleitung-flach-hex.js');
                       }
                     },{
-                      path: 'anleitung/spitzig-hex',
-                      component: 'anleitung-spitzig-hex',
+                      path: 'anleitung/spitze-hex',
+                      component: 'anleitung-spitze-hex',
                       action: async () => {
-                        await import('./pages/anleitung/anleitung-spitzig-hex.js');
+                        await import('./pages/anleitung/anleitung-spitze-hex.js');
                       }
                     },{
                       path: 'anleitung/tips',
