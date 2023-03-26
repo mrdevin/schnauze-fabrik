@@ -8,7 +8,7 @@
 
 @media (max-width: $mobileBreakpoint) {
     :host {
-        --grid-col-one-height: 200px;
+        --grid-col-one-height: 400px;
     }
 }
 
