@@ -27,7 +27,7 @@
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.3",
     "@sergeymakinen/vite-plugin-html-minimize": "^1.0.4",
-    "@types/node": "^18.15.9",
+    "@types/node": "^18.15.10",
     "@types/three": "^0.149.0",
     "@vaadin/router": "^1.7.4",
     "add": "^2.0.6",

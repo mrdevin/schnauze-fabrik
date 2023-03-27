@@ -71,9 +71,20 @@ export default defineConfig({
             }
         ),
         ViteRadar({
+            enableDev: false,
             // Google Analytics tag injection
             analytics: {
                 id: 'G-WKRSREQMZ0',
+                config: {
+                    cookie_domain: 'auto',
+                    cookie_expires: 63072000,
+                    cookie_prefix: 'none',
+                    cookie_update: true,
+                    cookie_flags: '',
+                    send_page_view: true,
+                    allow_google_signals: true,
+                    allow_ad_personalization_signals: true,
+                }
             },
         }),
 
