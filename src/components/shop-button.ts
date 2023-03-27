@@ -25,7 +25,7 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const ShopButton = ({ primary, size, label="Shop", href="https://schnauze-fabrik.shop/shop" }: ButtonProps) => {
+export const ShopButton = ({ primary, size, label ="Jetzt kaufen!", href="https://schnauze-fabrik.shop/shop" }: ButtonProps) => {
   const mode = primary ? 'shop-button--primary' : 'shop-button--secondary';
 
   return html`

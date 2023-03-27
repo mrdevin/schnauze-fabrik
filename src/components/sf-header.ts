@@ -47,6 +47,7 @@ export class SfHeader extends LitElement {
         <a @click="${this.tooggleMobileMenu}"  href="/anleitung/design-ideen">Design Ideen</a>
         <a @click="${this.tooggleMobileMenu}"  href="/anleitung/tips">Tips Und Tricks</a>
         <a @click="${this.tooggleMobileMenu}"  target="_blank" rel="noopener" href="http://schnauze-fabrik.app">Pattern Maker App</a>
+        <a @click="${this.tooggleMobileMenu}"  target="_blank" rel="noopener" href="http://schnauze-fabrik.shop/shop">Zum Laden</a>
         </div>
         ${ShopButton({ primary: true, size: 'large' })}
       </nav>

@@ -7,7 +7,6 @@ import animatedPointed from '@/models/pointed-3d.webm?url';
 import animatedPointedMp4 from '@/models/pointed-3d.mp4?url';
 import { ShopButton } from '../components/shop-button';
 
-import slide1 from '../img/home/slide1.jpg?url';
 import slide2 from '../img/home/slide2.jpg?url';
 import slide3 from '../img/home/slide3.jpg?url';
 import slide4 from '../img/home/slide4.jpg?url';
@@ -18,7 +17,6 @@ import slide8 from '../img/home/slide8.jpg?url';
 import slide9 from '../img/home/slide9.jpg?url';
 import slide10 from '../img/home/slide10.jpg?url';
 
-import slide1Webp from '../img/home/slide1.webp?url';
 import slide2Webp from '../img/home/slide2.webp?url';
 import slide3Webp from '../img/home/slide3.webp?url';
 import slide4Webp from '../img/home/slide4.webp?url';
