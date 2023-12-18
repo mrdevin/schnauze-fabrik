@@ -59,7 +59,7 @@ export class clBl extends LitElement {
         fill:none;
         stroke:var(--shadow-color);
         stroke-width:4;
-        stroke-miterlimit:10
+        stroke-miterlimit:10;
       }
 
       .st4{

@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 // import { styleMap } from 'lit-html/directives/style-map.js';
-import ShopButtonStyles from '../css/shop-button.css?inline';
+import ShopButtonStyles from '@/css/shop-button.css?inline';
 
 export interface ButtonProps {
   /**
