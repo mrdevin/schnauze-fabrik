@@ -8,15 +8,15 @@ import GlobalStyles from '@/css/global-styles.css?inline';
 
 @customElement('anleitung-index')
 export class AnleitungIndex extends LitElement {
-    static  styles = [
-        GlobalStyles,
-        AnleitungStyles,
-        TapeTitle,
-        css``
-    ]
+  static  styles = [
+    GlobalStyles,
+    AnleitungStyles,
+    TapeTitle,
+    css``
+  ]
 
-    render() {
-        return html`
+  render() {
+    return html`
            <header id="styled-head">
                 <h1 class="tape-title">Anleitung</h1>
 
@@ -63,5 +63,5 @@ export class AnleitungIndex extends LitElement {
 
 
         `
-    }
+  }
 }

@@ -21,52 +21,52 @@ export class PageNotFound extends LitElement {
   ];
 
   @state()
-  possibleMsgs = [
-    {
-      msg: 'Ick wees nüscht, kann nüscht, hab aba jede Menge Potenzial.',
-      trans: 'Ich weiß nichts, kann nichts, habe aber jede Menge Potenzial.'
-    },
+    possibleMsgs = [
+      {
+        msg: 'Ick wees nüscht, kann nüscht, hab aba jede Menge Potenzial.',
+        trans: 'Ich weiß nichts, kann nichts, habe aber jede Menge Potenzial.'
+      },
 
-    {
-      msg: 'Wat willste Du Flietzpiepe?',
-      trans: 'Hast Du ein Problem, Kleiner?'
-    },
+      {
+        msg: 'Wat willste Du Flietzpiepe?',
+        trans: 'Hast Du ein Problem, Kleiner?'
+      },
 
-    {
-      msg: 'Mach ma hier keene Fisimatenten!',
-      trans: 'Mach mal hier keine Fisimatenten! (Mach keinen Unsinn!)'
-    },
+      {
+        msg: 'Mach ma hier keene Fisimatenten!',
+        trans: 'Mach mal hier keine Fisimatenten! (Mach keinen Unsinn!)'
+      },
 
-    {
-      msg: 'Mach de Oogen zu, dann weesde, wat dir jehört.',
-      trans: 'Mach die Augen zu, dann weißt Du was Dir gehört.'
-    },
+      {
+        msg: 'Mach de Oogen zu, dann weesde, wat dir jehört.',
+        trans: 'Mach die Augen zu, dann weißt Du was Dir gehört.'
+      },
 
-    {
-      msg: "Ick gloob jetz hackt's!",
-      trans: 'Ich glaube jetzt hackt es! (Mir reicht es jetzt!'
-    },
+      {
+        msg: "Ick gloob jetz hackt's!",
+        trans: 'Ich glaube jetzt hackt es! (Mir reicht es jetzt!'
+      },
 
-    {
-      msg: "Mach ma hier nich so'n Feez!",
-      trans: 'Mach mal hier nicht solch einen Feez! (Nicht aufegen!)'
-    },
+      {
+        msg: "Mach ma hier nich so'n Feez!",
+        trans: 'Mach mal hier nicht solch einen Feez! (Nicht aufegen!)'
+      },
 
-    {
-      msg: 'Da wird ja der Hund in de Fanne varrückt!',
-      trans: 'Da wird ja der Hund in der Pfanne verrückt!(Ich bin erstaunt!'
-    },
+      {
+        msg: 'Da wird ja der Hund in de Fanne varrückt!',
+        trans: 'Da wird ja der Hund in der Pfanne verrückt!(Ich bin erstaunt!'
+      },
 
-    {
-      msg: "Jeh mir nich uff'n Keks Keule!",
-      trans: 'Geh mir nicht auf den Keks mein Freund! (Nerv mich nicht!'
-    },
+      {
+        msg: "Jeh mir nich uff'n Keks Keule!",
+        trans: 'Geh mir nicht auf den Keks mein Freund! (Nerv mich nicht!'
+      },
 
-    {
-      msg: 'Ick gloob meen Schwein feift!',
-      trans: 'Ich glaube mein Schwein pfeift! (Unglaublich!)'
-    },
-  ]
+      {
+        msg: 'Ick gloob meen Schwein feift!',
+        trans: 'Ich glaube mein Schwein pfeift! (Unglaublich!)'
+      },
+    ]
 
   getRandomInt(min, max) {
     min = Math.ceil(min);

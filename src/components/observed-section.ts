@@ -9,14 +9,14 @@ export class ObservedSection extends LitElement {
 
   @property() name = 'observed-section';
   @property({type: String})
-  title: string = '';
+    title: string = '';
 
   @state()
-  prevRatio = 0.0;
+    prevRatio = 0.0;
 
   connectedCallback() {
-      super.connectedCallback();
-      this.createObserver(this);
+    super.connectedCallback();
+    this.createObserver(this);
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

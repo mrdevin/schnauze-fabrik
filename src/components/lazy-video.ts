@@ -12,7 +12,7 @@ export class LazyVideo extends LitElement {
   ];
 
   @property({type: Object})
-  observer: IntersectionObserver;
+    observer: IntersectionObserver;
 
 
   observeCallback(entries, observer){

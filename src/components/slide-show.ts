@@ -9,13 +9,13 @@ export class SlideShow extends LitElement {
   ];
 
   @state()
-  images = [];
+    images = [];
 
   @state()
-  timer;
+    timer;
 
   @state()
-  animationDuration = 2000;
+    animationDuration = 2000;
 
   connectedCallback() {
     super.connectedCallback()
@@ -55,8 +55,8 @@ export class SlideShow extends LitElement {
       <div class="slotWrap"><slot></slot></div>
       <nav>
         ${this.images.map((img, index)=>{
-          return html`<span @click=${(event)=>{this.nextImage(event, index)}} ?active=${img.hasAttribute('active')} class="dot"></span>`;
-        })}
+    return html`<span @click=${(event)=>{this.nextImage(event, index)}} ?active=${img.hasAttribute('active')} class="dot"></span>`;
+  })}
       </nav>
 
     `;

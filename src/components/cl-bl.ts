@@ -73,13 +73,13 @@ export class clBl extends LitElement {
   `;
 
   @property({ type: String })
-  color: string;
+    color: string;
 
   @property({ type: String })
-  title: string;
+    title: string;
 
   @property({ type: String })
-  startOffset: string;
+    startOffset: string;
 
   constructor() {
     super();

@@ -14,15 +14,15 @@ import AnleitungStyles from "@/css/anleitung-styles.css?inline";
 
 @customElement('anleitung-flach-hex')
 export class AnleitungFlachHex extends LitElement {
-    static readonly styles = [
-      AnleitungStyles,
-      css``
-    ]
+  static readonly styles = [
+    AnleitungStyles,
+    css``
+  ]
 
-    createRenderRoot() { return this; }
+  createRenderRoot() { return this; }
 
-    render() {
-      return html`
+  render() {
+    return html`
         <style>
           ${AnleitungStyles}
         </style>
@@ -109,6 +109,6 @@ export class AnleitungFlachHex extends LitElement {
 
         </section>
       `
-    }
+  }
 
 }

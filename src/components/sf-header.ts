@@ -14,7 +14,7 @@ export class SfHeader extends LitElement {
   ];
 
   @property()
-  mobileMenuOpen = false;
+    mobileMenuOpen = false;
 
   tooggleMobileMenu(){
     this.mobileMenuOpen = !this.mobileMenuOpen;
