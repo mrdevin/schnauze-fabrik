@@ -1,5 +1,4 @@
 .split-tape-title span {
-    display: block;
     color: var(--primary-color);
     transform: rotate(-4deg);
     font-size: 36px;
@@ -11,7 +10,7 @@
     filter: var(--drop-shadow);
 }
 
-.split-tape-title span:before {
+.split-tape-title span::before {
     content: '';
     display: inline-block;
     width: 100%;
@@ -27,7 +26,6 @@
 .tape-title {
     text-align: center;
     justify-self: center;
-    display: flex;
     transform: rotate(-1deg);
     font-size: 36px;
     padding: .4rem .8rem;
@@ -39,7 +37,7 @@
     color: var(--primary-color);
 }
 
-.tape-title:before {
+.tape-title::before {
     content: '';
     display: inline-block;
     width: calc(100% - 5px);
@@ -53,7 +51,7 @@
 }
 
 @media(max-width: $mobileBreakpoint) {
-    .tape-title:before {
+    .tape-title::before {
         width: calc(100% - 10px);
     }
 }
@@ -64,7 +62,7 @@
     font-size: 24px;
 }
 
-:host a:not([type=button]) {
+:host a:not([type="button"]) {
     text-align: center;
     padding: 0.4rem 0.8rem;
     filter: var(--drop-shadow);
@@ -83,7 +81,7 @@
     filter: var(--drop-shadow-zero);
 }
 
-:host a:not([type=button]):before {
+:host a:not([type="button"])::before {
     content: '';
     display: inline-block;
     width: calc(100% - 5px);

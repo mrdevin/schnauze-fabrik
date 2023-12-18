@@ -1,6 +1,8 @@
 :host {
     display: grid;
+
     --grid-col-one-height: 387px;
+
     grid-template-rows: var(--grid-col-one-height) 40px;
     box-sizing: border-box;
     overflow: hidden;
@@ -19,13 +21,11 @@
     display: grid;
     height: var(--grid-col-one-height);
     width: 100%;
-
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
     grid-area: 1/1;
     box-sizing: border-box;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
 }
 
 img, ::slotted(img) {
@@ -39,14 +39,11 @@ img, ::slotted(img) {
     height: var(--grid-col-one-height);
     grid-area: 1/1;
     transition: opacity .4s linear;
+    opacity: 0;
 }
 
 ::slotted(picture[active]) {
-    opacity: 1;
-}
-
-::slotted(picture) {
-    opacity: 0;
+    opacity: 1; 
 }
 
 nav {

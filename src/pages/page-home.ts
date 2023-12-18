@@ -19,17 +19,17 @@ import slide10 from '../img/home/slide10.jpg?url';
 
 import slide2Webp from '../img/home/slide2.webp?url';
 import slide3Webp from '../img/home/slide3.webp?url';
-import slide4Webp from '../img/home/slide4.webp?url';
-import slide5Webp from '../img/home/slide5.webp?url';
-import slide6Webp from '../img/home/slide6.webp?url';
-import slide7Webp from '../img/home/slide7.webp?url';
-import slide8Webp from '../img/home/slide8.webp?url';
-import slide9Webp from '../img/home/slide9.webp?url';
-import slide10Webp from '../img/home/slide10.webp?url';
+import slide4Webp from '@/img/home/slide4.webp?url';
+import slide5Webp from '@/img/home/slide5.webp?url';
+import slide6Webp from '@/img/home/slide6.webp?url';
+import slide7Webp from '@/img/home/slide7.webp?url';
+import slide8Webp from '@/img/home/slide8.webp?url';
+import slide9Webp from '@/img/home/slide9.webp?url';
+import slide10Webp from '@/img/home/slide10.webp?url';
 
-import star from '../img/home/star.svg?url';
-import FlatAssemblyMp4 from '/src/vids/flach-tile-assembly.mp4';
-import FlatAssemblyWebm from '/src/vids/flach-tile-assembly.webm';
+import star from '@/img/home/star.svg?url';
+import FlatAssemblyMp4 from "@/vids/flach-tile-assembly.mp4";
+import FlatAssemblyWebm from "@/vids/flach-tile-assembly.webm";
 
 import GlobalStyles from '@/css/global-styles.css?inline';
 import HomeStyles from '@/css/home-styles.css?inline';

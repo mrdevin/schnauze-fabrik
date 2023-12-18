@@ -4,7 +4,7 @@ import FlowerJpeg from '@/img/design-ideen/flower.jpeg';
 import FlowerWebp from '@/img/design-ideen/flower.webp';
 import SlantedGridJpeg from '@/img/design-ideen/slanted-grid.jpeg';
 import SlantedGridWebp from '@/img/design-ideen/slanted-grid.webp';
-import AnleitungStyles from '/src/css/anleitung-styles.css?inline';
+import AnleitungStyles from "@/css/anleitung-styles.css?inline";
 
 @customElement('anleitung-design-ideen')
 export class AnleitungDesignIdeen extends LitElement {

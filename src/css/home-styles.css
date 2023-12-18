@@ -7,8 +7,7 @@
 
 @media(max-width: $mobileBreakpoint) {
     .split23 {
-        column-gap: 0;
-        row-gap: 1rem;
+        gap: 1rem 0;
         grid-template-rows: 180px 1fr;
         grid-template-columns: 1fr;
     }
@@ -19,11 +18,13 @@
     flex-wrap: wrap;
     align-content: center;
     justify-self: flex-end;
+
     /* justify-content: center; */
 }
 
 .split23 h1, .split23 p {
     margin: 0;
+
     /* margin-left: auto; */
 }
 
@@ -54,11 +55,16 @@
 
 @media(max-width: $mobileBreakpoint) {
     .models {
-        grid-column-gap: 0;
-        grid-row-gap: 1rem;
+        grid-gap: 1rem 0;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+}
+
+video {
+    width: 100%;
+    border-radius: 40px;
+    border: 7px solid var(--highlight-color);
 }
 
 .model-wrap {
@@ -91,7 +97,7 @@
     transform: translateX(-50%);
     place-items: center;
     place-content: center;
-    font-family: 'GT-Super-Display-Super';
+    font-family: GT-Super-Display-Super, Arial, Helvetica, sans-serif;
 }
 
 @media(max-width: $mobileBreakpoint) {
@@ -151,6 +157,10 @@
     }
 }
 
+h2 {
+    margin: 0;
+}
+
 .colors-title {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +172,7 @@
 
 .colors-title h2 {
     font-size: 40px;
-    margin: auto auto 4.5rem auto;
+    margin: auto auto 4.5rem;
 }
 
 .colors-section .number {
@@ -171,15 +181,15 @@
     font-size: 96px;
     text-align: center;
     justify-self: center;
-    text-shadow: 3px 4px 2px rgba(239, 229, 169, 0.25);
+    text-shadow: 3px 4px 2px rgb(239 229 169 / 25%);
     position: absolute;
     top: 1.2rem;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'GT-Super-Display-Super';
+    font-family: GT-Super-Display-Super, Arial, Helvetica, sans-serif;
 }
 
-.colors-section:after {
+.colors-section::after {
     content: '';
     display: inline-block;
     width: calc(100% - 50px);
@@ -193,11 +203,7 @@
 }
 
 @media (max-width: $mobileBreakpoint) {
-    .colors-section:after {
-        left: 17px;
-        transform: translateX(2.5px) skew(-8deg, 0deg);
-        width: calc(100% - 50px);
-
+    .colors-section::after {
         left: -13px;
         transform: translateX(2.5px) skew(-8deg, 0deg);
         width: calc(100% - 10px);
@@ -215,14 +221,17 @@
 .colors {
     width: 400px;
     height: 280px;
+
     /* overflow: hidden; */
     position: relative;
 }
 
 .colors cl-bl {
     position: absolute;
+
     --color-spacing: 10px;
-    filter: drop-shadow(3px 4px 2px rgba(239, 219, 169, 0.25));
+
+    filter: drop-shadow(3px 4px 2px rgb(239 219 169 / 25%));
 }
 
 .colors cl-bl:nth-of-type(1) {
@@ -263,16 +272,6 @@
 
 sf-model {
     margin: 0 auto;
-}
-
-h2 {
-    margin: 0;
-}
-
-video {
-    width: 100%;
-    border-radius: 40px;
-    border: 7px solid var(--highlight-color);
 }
 
 slide-show img {

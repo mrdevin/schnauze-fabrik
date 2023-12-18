@@ -3,6 +3,7 @@
   min-height: 100svh;
   max-width: 900px;
   display: grid;
+
   /* grid-template-rows: auto minmax(auto, 900px) auto; */
   margin: 0 auto;
   padding: 0;
@@ -20,7 +21,7 @@
 }
 
 a {
-  color: currentColor;
+  color: currentcolor;
   text-decoration: none;
 }
 
@@ -29,6 +30,7 @@ main {
   display: flex;
   max-width: 100%;
   overflow-x: hidden;
+
   /* overflow: hidden; */
 }
 

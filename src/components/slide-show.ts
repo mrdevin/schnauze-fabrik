@@ -32,7 +32,7 @@ export class SlideShow extends LitElement {
   nextImage(_event?, index?){
     // console.log("🚀 ~ file: slide-show.ts:33 ~ SlideShow ~ nextImage ~ index", index)
     clearTimeout(this.timer);
-    let activeImageIndex = this.images.indexOf(this.querySelector('picture[active]'));
+    const activeImageIndex = this.images.indexOf(this.querySelector('picture[active]'));
     let newImage = activeImageIndex + 1;
     // console.log("🚀 ~ file: slide-show.ts:33 ~ SlideShow ~ nextImage ~ newImage", newImage)
     if (newImage >= this.images.length){

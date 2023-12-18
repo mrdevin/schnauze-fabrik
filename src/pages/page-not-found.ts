@@ -75,9 +75,9 @@ export class PageNotFound extends LitElement {
   }
 
   renderRandomMsg() {
-    let randomIndex = this.getRandomInt(0, this.possibleMsgs.length-1);
+    const randomIndex = this.getRandomInt(0, this.possibleMsgs.length-1);
     console.log("🚀 ~ file: page-not-found.ts:61 ~ PageNotFound ~ renderRandomMsg ~ randomIndex", randomIndex)
-    let randomMsg = this.possibleMsgs[randomIndex]
+    const randomMsg = this.possibleMsgs[randomIndex]
     console.log("🚀 ~ file: page-not-found.ts:61 ~ PageNotFound ~ renderRandomMsg ~ randomMsg", randomMsg)
     return html`
        <h3>${randomMsg.msg}</h3>

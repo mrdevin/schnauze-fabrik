@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
 import ViteRadar from 'vite-plugin-radar';
-import htmlMinimize from '@sergeymakinen/vite-plugin-html-minimize';
+// import htmlMinimize from '@sergeymakinen/vite-plugin-html-minimize';
 import minifyHTMLLiterals from 'rollup-plugin-minify-html-literals';
 import imagemin from "rollup-plugin-imagemin";
 import brotli from "rollup-plugin-brotli";
@@ -48,14 +48,14 @@ export default defineConfig({
         }),
         brotli(),
         visualizer(),
-        htmlMinimize({
-            filter: /\.x?html?$/,
-            minifierOptions: {
-                collapseWhitespace: true,
-                minifyJS: true,
-                removeComments: true
-            }
-        }),
+        // htmlMinimize({
+        //     filter: /\.x?html?$/,
+        //     minifierOptions: {
+        //         collapseWhitespace: true,
+        //         minifyJS: true,
+        //         removeComments: true
+        //     }
+        // }),
         minifyHTMLLiterals(),
         imagemin(),
         vitePluginFaviconsInject('./src/img/logo.svg',
@@ -86,6 +86,9 @@ export default defineConfig({
                     allow_ad_personalization_signals: true,
                 }
             },
+            gtm: {
+                id: 'AW-11123207358'
+            }
         }),
 
         alias({

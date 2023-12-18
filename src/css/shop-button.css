@@ -1,14 +1,16 @@
 .shop-button {
   font-weight: 700;
   font-size: 32px;
-  font-family: 'GT-Super-Display-Super';
+  font-family: GT-Super-Display-Super, Arial, Helvetica, sans-serif;
   transform:  rotate(-8.12deg) translateY(-5px) scale(1);
   filter: var(--drop-shadow);
 
 }
+
 .shop-button .inner {
-  --clip-Path:  polygon(0% 12.25%, 8.75% 0%, 90% 0%, 100% 12.25%, 100% 86.63%, 90% 100%, 8.75% 100%, 0% 86.63%);
-  clip-path: var(--clip-Path);
+  --clip-path:  polygon(0% 12.25%, 8.75% 0%, 90% 0%, 100% 12.25%, 100% 86.63%, 90% 100%, 8.75% 100%, 0% 86.63%);
+
+  clip-path: var(--clip-path);
   background-color: var(--accent-color);
   padding: .3em .5em;
   color: var(--highlight-color);
@@ -18,10 +20,12 @@
   font-size: 12px;
   padding: 10px 16px;
 }
+
 .shop-button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
+
 .shop-button--large {
   font-size: 32px;
   padding: 10px 20px;

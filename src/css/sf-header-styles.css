@@ -1,20 +1,21 @@
 :host {
     --logo-space: calc(var(--sf-logo-size) + 10px);
+
     display: grid;
-    align-content: center;
-    justify-content: start;
+    place-content: center start;
     grid-template-rows: var(--logo-space) 50px;
     grid-template-columns: 1fr;
+
     --sf-logo-size: 111px;
+
     /* --border-style: 4px solid var(--shadow-color); */
     border: var(--border-style);
-    position: relative;
     color: var(--shadow-color);
     position: sticky;
     top: 0;
     margin-bottom: 1em;
     background-color: var(--primary-color);
-    box-shadow: 0 5px 3px 0px var(--primary-color);
+    box-shadow: 0 5px 3px 0 var(--primary-color);
     z-index: 100;
     max-height: fit-content;
 }
@@ -22,14 +23,13 @@
 :host>div {
     display: grid;
     grid-column-gap: 20px;
-
     grid-template-columns: var(--sf-logo-size) auto;
 }
 
 :host>div h2 {
     place-self: center;
     font-size: 32px;
-    filter: drop-shadow(rgba(40, 40, 40, 0.2) 2px 4px 1px);
+    filter: drop-shadow(rgb(40 40 40 / 20%) 2px 4px 1px);
 }
 
 @media(max-width: $mobileBreakpoint) {
@@ -58,7 +58,7 @@ nav {
 nav a {
     padding-right: 1em;
     margin-bottom: -5px;
-    font-family: 'JosefinSans', sans-serif;
+    font-family: JosefinSans, sans-serif;
     font-size: 16px;
     font-weight: normal;
 }

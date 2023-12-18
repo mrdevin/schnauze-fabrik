@@ -1,17 +1,13 @@
 .num,
 .note {
-    font-family: 'GT-Super-Display-Super', 'Rockwell', serif;
+    font-family: GT-Super-Display-Super, Rockwell, serif;
     font-weight: 700;
     font-size: 4em;
     color: var(--shadow-color);
-    float: left;
     text-shadow: 1px 1px 0 var(--primary-color), 6px 4px 0 var(--highlight-color);
     float: left;
     line-height: .6em;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    padding-right: 8px;
-    padding-left: 3px;
+    padding: 0 8px 2px 3px;
 }
 
 .note {
@@ -86,7 +82,7 @@ div.instImg {
     font-size: 20px;
     font-weight: normal;
     margin-left: 10px;
-    font-family: 'JosefinSans', Tahoma, Verdana, Segoe, sans-serif;
+    font-family: JosefinSans, Tahoma, Verdana, Segoe, sans-serif;
 }
 
 #styled-head h1 {
@@ -112,6 +108,7 @@ div.instImg {
     }
 }
 
+
 .split-2>div {
     max-width: 350px;
     display: grid;
@@ -121,9 +118,15 @@ div.instImg {
     row-gap: 20px;
 }
 
+/* stylelint-disable */
 .split-2>div a {
     margin: 0 auto;
 }
+
+.split-2 a, #resources article a {
+    max-height: 1.8em;
+}
+/* stylelint-enable */
 
 .split-2>div:nth-of-type(1) {
     justify-self: end;
@@ -131,10 +134,6 @@ div.instImg {
 
 .split-2>div:nth-of-type(2) {
     justify-self: start;
-}
-
-.split-2 a, #resources article a {
-    max-height: 1.8em;
 }
 
 .split-2 h3 {
@@ -167,7 +166,5 @@ div.instImg {
 }
 
 #resources article a{
-    align-self: end;
-    justify-self: center;
-    /* width: min-content; */
+    place-self: end center;
 }

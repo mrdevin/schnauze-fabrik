@@ -11,9 +11,9 @@ import Outline0Svg from '@/img/anleitung-spitzig-hex/deeper-base-pointed-hex-tit
 import Outline1Svg from '@/img/anleitung-spitzig-hex/deeper-base-pointed-hex-title-inst-1.svg';
 import Outline2Svg from '@/img/anleitung-spitzig-hex/deeper-base-pointed-hex-title-inst-2.svg';
 import Outline3Svg from '@/img/anleitung-spitzig-hex/deeper-base-pointed-hex-title-inst-3.svg';
-import AnleitungStyles from '/src/css/anleitung-styles.css?inline';
+import AnleitungStyles from "@/css/anleitung-styles.css?inline";
 
-@customElement('anleitung-spitzig-hex')
+@customElement('anleitung-spitze-hex')
 export class AnleitungSpitzigHex extends LitElement {
   static readonly styles = [
     AnleitungStyles,

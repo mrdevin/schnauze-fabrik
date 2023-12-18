@@ -4,32 +4,33 @@ html {
     min-height: 100svh;
     background-color: var(--primary-color);
     color: var(--shadow-color);
-    font-family: 'JosefinSans', Tahoma, Verdana, Segoe, sans-serif;
+    font-family: JosefinSans, Tahoma, Verdana, Segoe, sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
 }
 
 html, :root {
-    --primary-color: hsla(var(--primary-color-hue, 50), var(--primary-color-saturation, 100%), var(--primary-color-luminance, 50%), var(--primary-color-alpha, 1));
+    --primary-color: hsl(var(--primary-color-hue, 50) var(--primary-color-saturation, 100%) var(--primary-color-luminance, 50%) / var(--primary-color-alpha, 1));
     --logo-secondary-fill: var(--primary-color);
-    --highlight-color: rgb(239, 229, 169, 1);
+    --highlight-color: rgb(239 229 169 / 100%);
     --shadow-main-value: 40;
-    --shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), 1);
+    --shadow-color: rgb(var(--shadow-main-value) var(--shadow-main-value) var(--shadow-main-value) / 100%);
     --link-color: var(--shadow-color);
     --sf-logo-size: 111px;
-    --accent-color: rgba(229, 11, 168, 1);
-    --drop-shadow-color: rgba(var(--shadow-main-value), var(--shadow-main-value), var(--shadow-main-value), .25);
+    --accent-color: rgb(229 11 168 / 100%);
+    --drop-shadow-color: rgb(var(--shadow-main-value) var(--shadow-main-value) var(--shadow-main-value) / 25%);
     --drop-shadow: drop-shadow(3px 4px 2px var(--drop-shadow-color));
     --drop-shadow-zero: drop-shadow(0px 0px 2px var(--drop-shadow-color));
     --drop-shadow-raised: drop-shadow(6px 7px 2px var(--drop-shadow-color));
     --clbl-size: 127px;
+
     /* --mobile-breakpoint: 640px; */
     @custom-media --mobile-breakpoint (max-width: 640px);
 }
 
 @font-face {
-    font-family: 'GT-Super-Display-Super';
+    font-family: GT-Super-Display-Super;
     src: url('/src/fonts/GT-Super-Display-Super.woff2') format('woff2'),
         url('/src/fonts/GT-Super-Display-Super.woff') format('woff'),
         url('/src/fonts/GT-Super-Display-Super.ttf') format('truetype');
@@ -37,7 +38,7 @@ html, :root {
 }
 
 @font-face {
-    font-family: 'JosefinSans';
+    font-family: JosefinSans;
     src: url('/src/fonts/JosefinSans-Regular.woff') format('woff'),
         url('/src/fonts/JosefinSans-Regular.ttf') format('truetype');
     font-display: swap;
@@ -45,7 +46,7 @@ html, :root {
 }
 
 @font-face {
-    font-family: 'JosefinSans';
+    font-family: JosefinSans;
     src: url('/src/fonts/JosefinSans-Bold.woff') format('woff'),
         url('/src/fonts/JosefinSans-Bold.ttf') format('truetype');
     font-display: swap;
@@ -53,14 +54,14 @@ html, :root {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'GT-Super-Display-Super', Rockwell, serif;
+    font-family: GT-Super-Display-Super, Rockwell, serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-a:-webkit-any-link {
+a:any-link {
     color: var(--link-color);
     text-decoration: none;
 }
@@ -99,11 +100,12 @@ main a:not([type="button"]) {
 main a:hover {
     filter: var(--drop-shadow-raised)
 }
+
 main a:active {
     filter: var(--drop-shadow-zero)
 }
 
-main a:not([type="button"]):before {
+main a:not([type="button"])::before {
     content: '';
     display: inline-block;
     width: calc(100% - 5px);
